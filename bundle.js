@@ -15,29 +15,27 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _App_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./App.css */ "./src/App.css");
-/* harmony import */ var _mui_material_Button__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! @mui/material/Button */ "./node_modules/@mui/material/Button/Button.js");
-/* harmony import */ var react_dom_client__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-dom/client */ "./node_modules/react-dom/client.js");
-/* harmony import */ var _mui_material_Box__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @mui/material/Box */ "./node_modules/@mui/material/Box/Box.js");
-/* harmony import */ var _mui_material_Table__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! @mui/material/Table */ "./node_modules/@mui/material/Table/Table.js");
-/* harmony import */ var _mui_material_TableBody__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! @mui/material/TableBody */ "./node_modules/@mui/material/TableBody/TableBody.js");
-/* harmony import */ var _mui_material_TableCell__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @mui/material/TableCell */ "./node_modules/@mui/material/TableCell/TableCell.js");
-/* harmony import */ var _mui_material_TableContainer__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! @mui/material/TableContainer */ "./node_modules/@mui/material/TableContainer/TableContainer.js");
-/* harmony import */ var _mui_material_TableHead__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @mui/material/TableHead */ "./node_modules/@mui/material/TableHead/TableHead.js");
-/* harmony import */ var _mui_material_TableRow__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @mui/material/TableRow */ "./node_modules/@mui/material/TableRow/TableRow.js");
-/* harmony import */ var _mui_material_TableSortLabel__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @mui/material/TableSortLabel */ "./node_modules/@mui/material/TableSortLabel/TableSortLabel.js");
-/* harmony import */ var _mui_material_Toolbar__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! @mui/material/Toolbar */ "./node_modules/@mui/material/Toolbar/Toolbar.js");
-/* harmony import */ var _mui_material_Typography__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! @mui/material/Typography */ "./node_modules/@mui/material/Typography/Typography.js");
-/* harmony import */ var _mui_material_Paper__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! @mui/material/Paper */ "./node_modules/@mui/material/Paper/Paper.js");
-/* harmony import */ var _mui_utils__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @mui/utils */ "./node_modules/@mui/utils/esm/visuallyHidden.js");
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_10__);
-/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react/jsx-dev-runtime */ "./node_modules/react/jsx-dev-runtime.js");
+/* harmony import */ var _mui_material_Button__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! @mui/material/Button */ "./node_modules/@mui/material/Button/Button.js");
+/* harmony import */ var _mui_material_Box__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @mui/material/Box */ "./node_modules/@mui/material/Box/Box.js");
+/* harmony import */ var _mui_material_Table__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! @mui/material/Table */ "./node_modules/@mui/material/Table/Table.js");
+/* harmony import */ var _mui_material_TableBody__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! @mui/material/TableBody */ "./node_modules/@mui/material/TableBody/TableBody.js");
+/* harmony import */ var _mui_material_TableCell__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @mui/material/TableCell */ "./node_modules/@mui/material/TableCell/TableCell.js");
+/* harmony import */ var _mui_material_TableContainer__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! @mui/material/TableContainer */ "./node_modules/@mui/material/TableContainer/TableContainer.js");
+/* harmony import */ var _mui_material_TableHead__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @mui/material/TableHead */ "./node_modules/@mui/material/TableHead/TableHead.js");
+/* harmony import */ var _mui_material_TableRow__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @mui/material/TableRow */ "./node_modules/@mui/material/TableRow/TableRow.js");
+/* harmony import */ var _mui_material_TableSortLabel__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @mui/material/TableSortLabel */ "./node_modules/@mui/material/TableSortLabel/TableSortLabel.js");
+/* harmony import */ var _mui_material_Toolbar__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @mui/material/Toolbar */ "./node_modules/@mui/material/Toolbar/Toolbar.js");
+/* harmony import */ var _mui_material_Typography__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! @mui/material/Typography */ "./node_modules/@mui/material/Typography/Typography.js");
+/* harmony import */ var _mui_material_Paper__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! @mui/material/Paper */ "./node_modules/@mui/material/Paper/Paper.js");
+/* harmony import */ var _mui_utils__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @mui/utils */ "./node_modules/@mui/utils/esm/visuallyHidden.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_9__);
+/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react/jsx-dev-runtime */ "./node_modules/react/jsx-dev-runtime.js");
 /* provided dependency */ var __react_refresh_utils__ = __webpack_require__(/*! ./node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/runtime/RefreshUtils.js */ "./node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/runtime/RefreshUtils.js");
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! ./node_modules/react-refresh/runtime.js */ "./node_modules/react-refresh/runtime.js");
 
 var _jsxFileName = "C:\\Users\\Dart\\WebstormProjects\\csgostats\\src\\App.js",
     _s = __webpack_require__.$Refresh$.signature();
-
 
 
 
@@ -110,219 +108,219 @@ const headCells = [{
   numeric: false,
   disablePadding: false
 }, {
-  id: 'AVG Kills',
+  id: 'Rating',
   numeric: true,
   disablePadding: false
 }, {
-  id: 'AVG Assists',
+  id: 'Kills',
   numeric: true,
   disablePadding: false
 }, {
-  id: 'AVG Deaths',
+  id: 'Assists',
   numeric: true,
   disablePadding: false
 }, {
-  id: 'AVG K/D',
+  id: 'Deaths',
   numeric: true,
   disablePadding: false
 }, {
-  id: 'AVG HS',
+  id: 'K/D',
   numeric: true,
   disablePadding: false
 }, {
-  id: 'AVG HS%',
+  id: 'HS',
   numeric: true,
   disablePadding: false
 }, {
-  id: 'AVG Team kill',
+  id: 'HS%',
   numeric: true,
   disablePadding: false
 }, {
-  id: 'AVG Entry kill',
+  id: 'Team kill',
   numeric: true,
   disablePadding: false
 }, {
-  id: 'AVG Bomb planted',
+  id: 'Entry kill',
   numeric: true,
   disablePadding: false
 }, {
-  id: 'AVG MVP',
+  id: 'Bomb planted',
   numeric: true,
   disablePadding: false
 }, {
-  id: 'AVG Score',
+  id: 'MVP',
   numeric: true,
   disablePadding: false
 }, {
-  id: 'AVG RWS',
+  id: 'Score',
   numeric: true,
   disablePadding: false
 }, {
-  id: 'AVG Rating',
+  id: 'RWS',
   numeric: true,
   disablePadding: false
 }, {
-  id: 'AVG ATD (s)',
+  id: 'ATD (s)',
   numeric: true,
   disablePadding: false
 }, {
-  id: 'AVG KPR',
+  id: 'KPR',
   numeric: true,
   disablePadding: false
 }, {
-  id: 'AVG APR',
+  id: 'APR',
   numeric: true,
   disablePadding: false
 }, {
-  id: 'AVG TDH',
+  id: 'TDH',
   numeric: true,
   disablePadding: false
 }, {
-  id: 'AVG TDA',
+  id: 'TDA',
   numeric: true,
   disablePadding: false
 }, {
-  id: 'AVG 5K',
+  id: '5K',
   numeric: true,
   disablePadding: false
 }, {
-  id: 'AVG 4K',
+  id: '4K',
   numeric: true,
   disablePadding: false
 }, {
-  id: 'AVG 3K',
+  id: '3K',
   numeric: true,
   disablePadding: false
 }, {
-  id: 'AVG 2K',
+  id: '2K',
   numeric: true,
   disablePadding: false
 }, {
-  id: 'AVG 1K',
+  id: '1K',
   numeric: true,
   disablePadding: false
 }, {
-  id: 'AVG Trade kill',
+  id: 'Trade kill',
   numeric: true,
   disablePadding: false
 }, {
-  id: 'AVG Trade death',
+  id: 'Trade death',
   numeric: true,
   disablePadding: false
 }, {
-  id: 'AVG Crouch kill',
+  id: 'Crouch kill',
   numeric: true,
   disablePadding: false
 }, {
-  id: 'AVG Jump kill',
+  id: 'Jump kill',
   numeric: true,
   disablePadding: false
 }, {
-  id: 'AVG 1v1',
+  id: '1v1',
   numeric: true,
   disablePadding: false
 }, {
-  id: 'AVG 1v1 won',
+  id: '1v1 won',
   numeric: true,
   disablePadding: false
 }, {
-  id: 'AVG 1v1 loss',
+  id: '1v1 loss',
   numeric: true,
   disablePadding: false
 }, {
-  id: 'AVG 1v1 won %',
+  id: '1v1 won %',
   numeric: true,
   disablePadding: false
 }, {
-  id: 'AVG 1v2',
+  id: '1v2',
   numeric: true,
   disablePadding: false
 }, {
-  id: 'AVG 1v2 won',
+  id: '1v2 won',
   numeric: true,
   disablePadding: false
 }, {
-  id: 'AVG 1v2 loss',
+  id: '1v2 loss',
   numeric: true,
   disablePadding: false
 }, {
-  id: 'AVG 1v2 won %',
+  id: '1v2 won %',
   numeric: true,
   disablePadding: false
 }, {
-  id: 'AVG 1v3',
+  id: '1v3',
   numeric: true,
   disablePadding: false
 }, {
-  id: 'AVG 1v3 won',
+  id: '1v3 won',
   numeric: true,
   disablePadding: false
 }, {
-  id: 'AVG 1v3 loss',
+  id: '1v3 loss',
   numeric: true,
   disablePadding: false
 }, {
-  id: 'AVG 1v3 won %',
+  id: '1v3 won %',
   numeric: true,
   disablePadding: false
 }, {
-  id: 'AVG 1v4',
+  id: '1v4',
   numeric: true,
   disablePadding: false
 }, {
-  id: 'AVG 1v4 won',
+  id: '1v4 won',
   numeric: true,
   disablePadding: false
 }, {
-  id: 'AVG 1v4 loss',
+  id: '1v4 loss',
   numeric: true,
   disablePadding: false
 }, {
-  id: 'AVG 1v4 won %',
+  id: '1v4 won %',
   numeric: true,
   disablePadding: false
 }, {
-  id: 'AVG 1v5',
+  id: '1v5',
   numeric: true,
   disablePadding: false
 }, {
-  id: 'AVG 1v5 won',
+  id: '1v5 won',
   numeric: true,
   disablePadding: false
 }, {
-  id: 'AVG 1v5 loss',
+  id: '1v5 loss',
   numeric: true,
   disablePadding: false
 }, {
-  id: 'AVG 1v5 won %',
+  id: '1v5 won %',
   numeric: true,
   disablePadding: false
 }, {
-  id: 'AVG Flashbang',
+  id: 'Flashbang',
   numeric: true,
   disablePadding: false
 }, {
-  id: 'AVG Smoke',
+  id: 'Smoke',
   numeric: true,
   disablePadding: false
 }, {
-  id: 'AVG HE',
+  id: 'HE',
   numeric: true,
   disablePadding: false
 }, {
-  id: 'AVG Decoy',
+  id: 'Decoy',
   numeric: true,
   disablePadding: false
 }, {
-  id: 'AVG Molotov',
+  id: 'Molotov',
   numeric: true,
   disablePadding: false
 }, {
-  id: 'AVG Incendiary',
+  id: 'Incendiary',
   numeric: true,
   disablePadding: false
 }, {
-  id: 'AVG VAC',
+  id: 'VAC',
   numeric: true,
   disablePadding: false
 }];
@@ -338,63 +336,63 @@ function EnhancedTableHead(props) {
     onRequestSort(event, property);
   };
 
-  return /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxDEV)(_mui_material_TableHead__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxDEV)(_mui_material_TableRow__WEBPACK_IMPORTED_MODULE_5__["default"], {
-      children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxDEV)(_mui_material_TableCell__WEBPACK_IMPORTED_MODULE_6__["default"], {
+  return /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxDEV)(_mui_material_TableHead__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxDEV)(_mui_material_TableRow__WEBPACK_IMPORTED_MODULE_4__["default"], {
+      children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxDEV)(_mui_material_TableCell__WEBPACK_IMPORTED_MODULE_5__["default"], {
         padding: "checkbox"
       }, void 0, false, {
         fileName: _jsxFileName,
-        lineNumber: 357,
+        lineNumber: 356,
         columnNumber: 17
-      }, this), headCells.map(headCell => /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxDEV)(_mui_material_TableCell__WEBPACK_IMPORTED_MODULE_6__["default"], {
+      }, this), headCells.map(headCell => /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxDEV)(_mui_material_TableCell__WEBPACK_IMPORTED_MODULE_5__["default"], {
         align: headCell.numeric ? 'right' : 'left',
         padding: headCell.disablePadding ? 'none' : 'normal',
         sortDirection: orderBy === headCell.id ? order : false,
-        children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxDEV)(_mui_material_TableSortLabel__WEBPACK_IMPORTED_MODULE_7__["default"], {
+        children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxDEV)(_mui_material_TableSortLabel__WEBPACK_IMPORTED_MODULE_6__["default"], {
           active: orderBy === headCell.id,
           direction: orderBy === headCell.id ? order : 'asc',
           onClick: createSortHandler(headCell.id),
-          children: [headCell.id, orderBy === headCell.id ? /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxDEV)(_mui_material_Box__WEBPACK_IMPORTED_MODULE_8__["default"], {
+          children: [headCell.id, orderBy === headCell.id ? /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxDEV)(_mui_material_Box__WEBPACK_IMPORTED_MODULE_7__["default"], {
             component: "span",
-            sx: _mui_utils__WEBPACK_IMPORTED_MODULE_9__["default"],
+            sx: _mui_utils__WEBPACK_IMPORTED_MODULE_8__["default"],
             children: order === 'desc' ? 'sorted descending' : 'sorted ascending'
           }, void 0, false, {
             fileName: _jsxFileName,
-            lineNumber: 373,
+            lineNumber: 372,
             columnNumber: 33
           }, this) : null]
         }, void 0, true, {
           fileName: _jsxFileName,
-          lineNumber: 366,
+          lineNumber: 365,
           columnNumber: 25
         }, this)
       }, headCell.id, false, {
         fileName: _jsxFileName,
-        lineNumber: 360,
+        lineNumber: 359,
         columnNumber: 21
       }, this))]
     }, void 0, true, {
       fileName: _jsxFileName,
-      lineNumber: 356,
+      lineNumber: 355,
       columnNumber: 13
     }, this)
   }, void 0, false, {
     fileName: _jsxFileName,
-    lineNumber: 355,
+    lineNumber: 354,
     columnNumber: 9
   }, this);
 }
 
 _c = EnhancedTableHead;
 EnhancedTableHead.propTypes = {
-  onRequestSort: (prop_types__WEBPACK_IMPORTED_MODULE_10___default().func.isRequired),
-  order: prop_types__WEBPACK_IMPORTED_MODULE_10___default().oneOf(['asc', 'desc']).isRequired,
-  orderBy: (prop_types__WEBPACK_IMPORTED_MODULE_10___default().string.isRequired) // rowCount: PropTypes.number.isRequired,
+  onRequestSort: (prop_types__WEBPACK_IMPORTED_MODULE_9___default().func.isRequired),
+  order: prop_types__WEBPACK_IMPORTED_MODULE_9___default().oneOf(['asc', 'desc']).isRequired,
+  orderBy: (prop_types__WEBPACK_IMPORTED_MODULE_9___default().string.isRequired) // rowCount: PropTypes.number.isRequired,
 
 };
 
 const EnhancedTableToolbar = () => {
-  return /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxDEV)(_mui_material_Toolbar__WEBPACK_IMPORTED_MODULE_11__["default"], {
+  return /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxDEV)(_mui_material_Toolbar__WEBPACK_IMPORTED_MODULE_10__["default"], {
     sx: {
       pl: {
         sm: 2
@@ -404,7 +402,7 @@ const EnhancedTableToolbar = () => {
         sm: 1
       }
     },
-    children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxDEV)(_mui_material_Typography__WEBPACK_IMPORTED_MODULE_12__["default"], {
+    children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxDEV)(_mui_material_Typography__WEBPACK_IMPORTED_MODULE_11__["default"], {
       sx: {
         flex: '1 1 100%'
       },
@@ -413,26 +411,27 @@ const EnhancedTableToolbar = () => {
       component: "div"
     }, void 0, false, {
       fileName: _jsxFileName,
-      lineNumber: 400,
+      lineNumber: 399,
       columnNumber: 13
     }, undefined)
   }, void 0, false, {
     fileName: _jsxFileName,
-    lineNumber: 394,
+    lineNumber: 393,
     columnNumber: 9
   }, undefined);
 };
 
 _c2 = EnhancedTableToolbar;
 EnhancedTableToolbar.propTypes = {};
+let cachePlayers = [];
 
 function App() {
   _s();
 
   const [order, setOrder] = react__WEBPACK_IMPORTED_MODULE_0___default().useState('desc');
-  const [orderBy, setOrderBy] = react__WEBPACK_IMPORTED_MODULE_0___default().useState('K/D');
+  const [orderBy, setOrderBy] = react__WEBPACK_IMPORTED_MODULE_0___default().useState('Rating');
   const dense = react__WEBPACK_IMPORTED_MODULE_0___default().useState(false);
-  let players = [];
+  const [players, updatePlayers] = react__WEBPACK_IMPORTED_MODULE_0___default().useState([]);
 
   const handleRequestSort = (event, property) => {
     const isAsc = orderBy === property && order === 'asc';
@@ -503,7 +502,7 @@ function App() {
   }
 
   function getMatchesValue(value) {
-    return value.length || 1;
+    return value && value.length || 1;
   }
 
   function getTextValue(value) {
@@ -534,501 +533,45 @@ function App() {
     let files = event.target.files;
 
     if (files[0]) {
-      const table = react_dom_client__WEBPACK_IMPORTED_MODULE_2__.createRoot(document.getElementById('table-body'));
       Array.prototype.forEach.call(files, function (file) {
         let fileReader = new FileReader();
         fileReader.readAsText(file);
 
         fileReader.onload = function (e) {
-          players = concatTwoArrays(players, csvToJson(e.target.result)); // document.getElementById('table-body').innerHTML = '';
-
-          const element = stableSort(players, getComparator(order, orderBy)).map(row => {
-            let rowKD = row['K/D'];
-            let rowHSPercentage = row['HS%'];
-            let rowTeamKill = row['Team kill'];
-            let rowEntryKill = row['Entry kill'];
-            let rowBombPlanted = row['Bomb planted'];
-            let rowATDs = row['ATD (s)'];
-            let row5k = row['5K'];
-            let row4k = row['4K'];
-            let row3k = row['3K'];
-            let row2k = row['2K'];
-            let row1k = row['1K'];
-            let rowTradeKill = row['Trade kill'];
-            let rowTradeDeath = row['Trade death'];
-            let rowCrouchKill = row['Crouch kill'];
-            let rowJumpKill = row['Jump kill'];
-            let row1v1 = row['1v1'];
-            let row1v1won = row['1v1 won'];
-            let row1v1loss = row['1v1 loss'];
-            let row1v1wonPercentage = row['1v1 won %'];
-            let row1v2 = row['1v2'];
-            let row1v2won = row['1v2 won'];
-            let row1v2loss = row['1v2 loss'];
-            let row1v2wonPercentage = row['1v2 won %'];
-            let row1v3 = row['1v3'];
-            let row1v3won = row['1v3 won'];
-            let row1v3loss = row['1v3 loss'];
-            let row1v3wonPercentage = row['1v3 won %'];
-            let row1v4 = row['1v4'];
-            let row1v4won = row['1v4 won'];
-            let row1v4loss = row['1v4 loss'];
-            let row1v4wonPercentage = row['1v4 won %'];
-            let row1v5 = row['1v5'];
-            let row1v5won = row['1v5 won'];
-            let row1v5loss = row['1v5 loss'];
-            let row1v5wonPercentage = row['1v5 won %'];
-            return /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxDEV)(_mui_material_TableRow__WEBPACK_IMPORTED_MODULE_5__["default"], {
-              hover: true,
-              role: "checkbox",
-              tabIndex: -1,
-              children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxDEV)(_mui_material_TableCell__WEBPACK_IMPORTED_MODULE_6__["default"], {
-                padding: "checkbox"
-              }, void 0, false, {
-                fileName: _jsxFileName,
-                lineNumber: 572,
-                columnNumber: 37
-              }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxDEV)(_mui_material_TableCell__WEBPACK_IMPORTED_MODULE_6__["default"], {
-                align: "right",
-                children: row.SteamID
-              }, void 0, false, {
-                fileName: _jsxFileName,
-                lineNumber: 574,
-                columnNumber: 37
-              }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxDEV)(_mui_material_TableCell__WEBPACK_IMPORTED_MODULE_6__["default"], {
-                component: "th",
-                id: row.Name,
-                scope: "row",
-                padding: "none",
-                children: getTextValue(row.Name)
-              }, void 0, false, {
-                fileName: _jsxFileName,
-                lineNumber: 575,
-                columnNumber: 37
-              }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxDEV)(_mui_material_TableCell__WEBPACK_IMPORTED_MODULE_6__["default"], {
-                align: "right",
-                children: getMatchesValue(row.Matches)
-              }, void 0, false, {
-                fileName: _jsxFileName,
-                lineNumber: 583,
-                columnNumber: 37
-              }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxDEV)(_mui_material_TableCell__WEBPACK_IMPORTED_MODULE_6__["default"], {
-                align: "right",
-                children: getNumericValue(row.Rank)
-              }, void 0, false, {
-                fileName: _jsxFileName,
-                lineNumber: 584,
-                columnNumber: 37
-              }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxDEV)(_mui_material_TableCell__WEBPACK_IMPORTED_MODULE_6__["default"], {
-                children: getTextValue(row.Team)
-              }, void 0, false, {
-                fileName: _jsxFileName,
-                lineNumber: 585,
-                columnNumber: 37
-              }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxDEV)(_mui_material_TableCell__WEBPACK_IMPORTED_MODULE_6__["default"], {
-                align: "right",
-                children: getNumericValue(row.Kills)
-              }, void 0, false, {
-                fileName: _jsxFileName,
-                lineNumber: 586,
-                columnNumber: 37
-              }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxDEV)(_mui_material_TableCell__WEBPACK_IMPORTED_MODULE_6__["default"], {
-                align: "right",
-                children: getNumericValue(row.Assists)
-              }, void 0, false, {
-                fileName: _jsxFileName,
-                lineNumber: 587,
-                columnNumber: 37
-              }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxDEV)(_mui_material_TableCell__WEBPACK_IMPORTED_MODULE_6__["default"], {
-                align: "right",
-                children: getNumericValue(row.Deaths)
-              }, void 0, false, {
-                fileName: _jsxFileName,
-                lineNumber: 588,
-                columnNumber: 37
-              }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxDEV)(_mui_material_TableCell__WEBPACK_IMPORTED_MODULE_6__["default"], {
-                align: "right",
-                children: getNumericValue(rowKD)
-              }, void 0, false, {
-                fileName: _jsxFileName,
-                lineNumber: 589,
-                columnNumber: 37
-              }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxDEV)(_mui_material_TableCell__WEBPACK_IMPORTED_MODULE_6__["default"], {
-                align: "right",
-                children: getNumericValue(row.HS)
-              }, void 0, false, {
-                fileName: _jsxFileName,
-                lineNumber: 590,
-                columnNumber: 37
-              }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxDEV)(_mui_material_TableCell__WEBPACK_IMPORTED_MODULE_6__["default"], {
-                align: "right",
-                children: getNumericValue(rowHSPercentage)
-              }, void 0, false, {
-                fileName: _jsxFileName,
-                lineNumber: 591,
-                columnNumber: 37
-              }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxDEV)(_mui_material_TableCell__WEBPACK_IMPORTED_MODULE_6__["default"], {
-                align: "right",
-                children: getNumericValue(rowTeamKill)
-              }, void 0, false, {
-                fileName: _jsxFileName,
-                lineNumber: 592,
-                columnNumber: 37
-              }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxDEV)(_mui_material_TableCell__WEBPACK_IMPORTED_MODULE_6__["default"], {
-                align: "right",
-                children: getNumericValue(rowEntryKill)
-              }, void 0, false, {
-                fileName: _jsxFileName,
-                lineNumber: 593,
-                columnNumber: 37
-              }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxDEV)(_mui_material_TableCell__WEBPACK_IMPORTED_MODULE_6__["default"], {
-                align: "right",
-                children: getNumericValue(rowBombPlanted)
-              }, void 0, false, {
-                fileName: _jsxFileName,
-                lineNumber: 594,
-                columnNumber: 37
-              }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxDEV)(_mui_material_TableCell__WEBPACK_IMPORTED_MODULE_6__["default"], {
-                align: "right",
-                children: getNumericValue(row.MVP)
-              }, void 0, false, {
-                fileName: _jsxFileName,
-                lineNumber: 595,
-                columnNumber: 37
-              }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxDEV)(_mui_material_TableCell__WEBPACK_IMPORTED_MODULE_6__["default"], {
-                align: "right",
-                children: getNumericValue(row.Score)
-              }, void 0, false, {
-                fileName: _jsxFileName,
-                lineNumber: 596,
-                columnNumber: 37
-              }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxDEV)(_mui_material_TableCell__WEBPACK_IMPORTED_MODULE_6__["default"], {
-                align: "right",
-                children: getNumericValue(row.RWS)
-              }, void 0, false, {
-                fileName: _jsxFileName,
-                lineNumber: 597,
-                columnNumber: 37
-              }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxDEV)(_mui_material_TableCell__WEBPACK_IMPORTED_MODULE_6__["default"], {
-                align: "right",
-                children: getNumericValue(row.Rating)
-              }, void 0, false, {
-                fileName: _jsxFileName,
-                lineNumber: 598,
-                columnNumber: 37
-              }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxDEV)(_mui_material_TableCell__WEBPACK_IMPORTED_MODULE_6__["default"], {
-                align: "right",
-                children: getNumericValue(rowATDs)
-              }, void 0, false, {
-                fileName: _jsxFileName,
-                lineNumber: 599,
-                columnNumber: 37
-              }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxDEV)(_mui_material_TableCell__WEBPACK_IMPORTED_MODULE_6__["default"], {
-                align: "right",
-                children: getNumericValue(row.KPR)
-              }, void 0, false, {
-                fileName: _jsxFileName,
-                lineNumber: 600,
-                columnNumber: 37
-              }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxDEV)(_mui_material_TableCell__WEBPACK_IMPORTED_MODULE_6__["default"], {
-                align: "right",
-                children: getNumericValue(row.APR)
-              }, void 0, false, {
-                fileName: _jsxFileName,
-                lineNumber: 601,
-                columnNumber: 37
-              }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxDEV)(_mui_material_TableCell__WEBPACK_IMPORTED_MODULE_6__["default"], {
-                align: "right",
-                children: getNumericValue(row.TDH)
-              }, void 0, false, {
-                fileName: _jsxFileName,
-                lineNumber: 602,
-                columnNumber: 37
-              }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxDEV)(_mui_material_TableCell__WEBPACK_IMPORTED_MODULE_6__["default"], {
-                align: "right",
-                children: getNumericValue(row.TDA)
-              }, void 0, false, {
-                fileName: _jsxFileName,
-                lineNumber: 603,
-                columnNumber: 37
-              }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxDEV)(_mui_material_TableCell__WEBPACK_IMPORTED_MODULE_6__["default"], {
-                align: "right",
-                children: getNumericValue(row5k)
-              }, void 0, false, {
-                fileName: _jsxFileName,
-                lineNumber: 604,
-                columnNumber: 37
-              }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxDEV)(_mui_material_TableCell__WEBPACK_IMPORTED_MODULE_6__["default"], {
-                align: "right",
-                children: getNumericValue(row4k)
-              }, void 0, false, {
-                fileName: _jsxFileName,
-                lineNumber: 605,
-                columnNumber: 37
-              }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxDEV)(_mui_material_TableCell__WEBPACK_IMPORTED_MODULE_6__["default"], {
-                align: "right",
-                children: getNumericValue(row3k)
-              }, void 0, false, {
-                fileName: _jsxFileName,
-                lineNumber: 606,
-                columnNumber: 37
-              }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxDEV)(_mui_material_TableCell__WEBPACK_IMPORTED_MODULE_6__["default"], {
-                align: "right",
-                children: getNumericValue(row2k)
-              }, void 0, false, {
-                fileName: _jsxFileName,
-                lineNumber: 607,
-                columnNumber: 37
-              }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxDEV)(_mui_material_TableCell__WEBPACK_IMPORTED_MODULE_6__["default"], {
-                align: "right",
-                children: getNumericValue(row1k)
-              }, void 0, false, {
-                fileName: _jsxFileName,
-                lineNumber: 608,
-                columnNumber: 37
-              }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxDEV)(_mui_material_TableCell__WEBPACK_IMPORTED_MODULE_6__["default"], {
-                align: "right",
-                children: getNumericValue(rowTradeKill)
-              }, void 0, false, {
-                fileName: _jsxFileName,
-                lineNumber: 609,
-                columnNumber: 37
-              }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxDEV)(_mui_material_TableCell__WEBPACK_IMPORTED_MODULE_6__["default"], {
-                align: "right",
-                children: getNumericValue(rowTradeDeath)
-              }, void 0, false, {
-                fileName: _jsxFileName,
-                lineNumber: 610,
-                columnNumber: 37
-              }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxDEV)(_mui_material_TableCell__WEBPACK_IMPORTED_MODULE_6__["default"], {
-                align: "right",
-                children: getNumericValue(rowCrouchKill)
-              }, void 0, false, {
-                fileName: _jsxFileName,
-                lineNumber: 611,
-                columnNumber: 37
-              }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxDEV)(_mui_material_TableCell__WEBPACK_IMPORTED_MODULE_6__["default"], {
-                align: "right",
-                children: getNumericValue(rowJumpKill)
-              }, void 0, false, {
-                fileName: _jsxFileName,
-                lineNumber: 612,
-                columnNumber: 37
-              }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxDEV)(_mui_material_TableCell__WEBPACK_IMPORTED_MODULE_6__["default"], {
-                align: "right",
-                children: getNumericValue(row1v1)
-              }, void 0, false, {
-                fileName: _jsxFileName,
-                lineNumber: 613,
-                columnNumber: 37
-              }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxDEV)(_mui_material_TableCell__WEBPACK_IMPORTED_MODULE_6__["default"], {
-                align: "right",
-                children: getNumericValue(row1v1won)
-              }, void 0, false, {
-                fileName: _jsxFileName,
-                lineNumber: 614,
-                columnNumber: 37
-              }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxDEV)(_mui_material_TableCell__WEBPACK_IMPORTED_MODULE_6__["default"], {
-                align: "right",
-                children: getNumericValue(row1v1loss)
-              }, void 0, false, {
-                fileName: _jsxFileName,
-                lineNumber: 615,
-                columnNumber: 37
-              }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxDEV)(_mui_material_TableCell__WEBPACK_IMPORTED_MODULE_6__["default"], {
-                align: "right",
-                children: getNumericValue(row1v1wonPercentage)
-              }, void 0, false, {
-                fileName: _jsxFileName,
-                lineNumber: 616,
-                columnNumber: 37
-              }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxDEV)(_mui_material_TableCell__WEBPACK_IMPORTED_MODULE_6__["default"], {
-                align: "right",
-                children: getNumericValue(row1v2)
-              }, void 0, false, {
-                fileName: _jsxFileName,
-                lineNumber: 617,
-                columnNumber: 37
-              }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxDEV)(_mui_material_TableCell__WEBPACK_IMPORTED_MODULE_6__["default"], {
-                align: "right",
-                children: getNumericValue(row1v2won)
-              }, void 0, false, {
-                fileName: _jsxFileName,
-                lineNumber: 618,
-                columnNumber: 37
-              }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxDEV)(_mui_material_TableCell__WEBPACK_IMPORTED_MODULE_6__["default"], {
-                align: "right",
-                children: getNumericValue(row1v2loss)
-              }, void 0, false, {
-                fileName: _jsxFileName,
-                lineNumber: 619,
-                columnNumber: 37
-              }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxDEV)(_mui_material_TableCell__WEBPACK_IMPORTED_MODULE_6__["default"], {
-                align: "right",
-                children: getNumericValue(row1v2wonPercentage)
-              }, void 0, false, {
-                fileName: _jsxFileName,
-                lineNumber: 620,
-                columnNumber: 37
-              }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxDEV)(_mui_material_TableCell__WEBPACK_IMPORTED_MODULE_6__["default"], {
-                align: "right",
-                children: getNumericValue(row1v3)
-              }, void 0, false, {
-                fileName: _jsxFileName,
-                lineNumber: 621,
-                columnNumber: 37
-              }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxDEV)(_mui_material_TableCell__WEBPACK_IMPORTED_MODULE_6__["default"], {
-                align: "right",
-                children: getNumericValue(row1v3won)
-              }, void 0, false, {
-                fileName: _jsxFileName,
-                lineNumber: 622,
-                columnNumber: 37
-              }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxDEV)(_mui_material_TableCell__WEBPACK_IMPORTED_MODULE_6__["default"], {
-                align: "right",
-                children: getNumericValue(row1v3loss)
-              }, void 0, false, {
-                fileName: _jsxFileName,
-                lineNumber: 623,
-                columnNumber: 37
-              }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxDEV)(_mui_material_TableCell__WEBPACK_IMPORTED_MODULE_6__["default"], {
-                align: "right",
-                children: getNumericValue(row1v3wonPercentage)
-              }, void 0, false, {
-                fileName: _jsxFileName,
-                lineNumber: 624,
-                columnNumber: 37
-              }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxDEV)(_mui_material_TableCell__WEBPACK_IMPORTED_MODULE_6__["default"], {
-                align: "right",
-                children: getNumericValue(row1v4)
-              }, void 0, false, {
-                fileName: _jsxFileName,
-                lineNumber: 625,
-                columnNumber: 37
-              }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxDEV)(_mui_material_TableCell__WEBPACK_IMPORTED_MODULE_6__["default"], {
-                align: "right",
-                children: getNumericValue(row1v4won)
-              }, void 0, false, {
-                fileName: _jsxFileName,
-                lineNumber: 626,
-                columnNumber: 37
-              }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxDEV)(_mui_material_TableCell__WEBPACK_IMPORTED_MODULE_6__["default"], {
-                align: "right",
-                children: getNumericValue(row1v4loss)
-              }, void 0, false, {
-                fileName: _jsxFileName,
-                lineNumber: 627,
-                columnNumber: 37
-              }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxDEV)(_mui_material_TableCell__WEBPACK_IMPORTED_MODULE_6__["default"], {
-                align: "right",
-                children: getNumericValue(row1v4wonPercentage)
-              }, void 0, false, {
-                fileName: _jsxFileName,
-                lineNumber: 628,
-                columnNumber: 37
-              }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxDEV)(_mui_material_TableCell__WEBPACK_IMPORTED_MODULE_6__["default"], {
-                align: "right",
-                children: getNumericValue(row1v5)
-              }, void 0, false, {
-                fileName: _jsxFileName,
-                lineNumber: 629,
-                columnNumber: 37
-              }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxDEV)(_mui_material_TableCell__WEBPACK_IMPORTED_MODULE_6__["default"], {
-                align: "right",
-                children: getNumericValue(row1v5won)
-              }, void 0, false, {
-                fileName: _jsxFileName,
-                lineNumber: 630,
-                columnNumber: 37
-              }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxDEV)(_mui_material_TableCell__WEBPACK_IMPORTED_MODULE_6__["default"], {
-                align: "right",
-                children: getNumericValue(row1v5loss)
-              }, void 0, false, {
-                fileName: _jsxFileName,
-                lineNumber: 631,
-                columnNumber: 37
-              }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxDEV)(_mui_material_TableCell__WEBPACK_IMPORTED_MODULE_6__["default"], {
-                align: "right",
-                children: getNumericValue(row1v5wonPercentage)
-              }, void 0, false, {
-                fileName: _jsxFileName,
-                lineNumber: 632,
-                columnNumber: 37
-              }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxDEV)(_mui_material_TableCell__WEBPACK_IMPORTED_MODULE_6__["default"], {
-                align: "right",
-                children: getNumericValue(row.Flashbang)
-              }, void 0, false, {
-                fileName: _jsxFileName,
-                lineNumber: 633,
-                columnNumber: 37
-              }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxDEV)(_mui_material_TableCell__WEBPACK_IMPORTED_MODULE_6__["default"], {
-                align: "right",
-                children: getNumericValue(row.Smoke)
-              }, void 0, false, {
-                fileName: _jsxFileName,
-                lineNumber: 634,
-                columnNumber: 37
-              }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxDEV)(_mui_material_TableCell__WEBPACK_IMPORTED_MODULE_6__["default"], {
-                align: "right",
-                children: getNumericValue(row.HE)
-              }, void 0, false, {
-                fileName: _jsxFileName,
-                lineNumber: 635,
-                columnNumber: 37
-              }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxDEV)(_mui_material_TableCell__WEBPACK_IMPORTED_MODULE_6__["default"], {
-                align: "right",
-                children: getNumericValue(row.Decoy)
-              }, void 0, false, {
-                fileName: _jsxFileName,
-                lineNumber: 636,
-                columnNumber: 37
-              }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxDEV)(_mui_material_TableCell__WEBPACK_IMPORTED_MODULE_6__["default"], {
-                align: "right",
-                children: getNumericValue(row.Molotov)
-              }, void 0, false, {
-                fileName: _jsxFileName,
-                lineNumber: 637,
-                columnNumber: 37
-              }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxDEV)(_mui_material_TableCell__WEBPACK_IMPORTED_MODULE_6__["default"], {
-                align: "right",
-                children: getNumericValue(row.Incendiary)
-              }, void 0, false, {
-                fileName: _jsxFileName,
-                lineNumber: 638,
-                columnNumber: 37
-              }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxDEV)(_mui_material_TableCell__WEBPACK_IMPORTED_MODULE_6__["default"], {
-                align: "right",
-                children: getNumericValue(row.VAC)
-              }, void 0, false, {
-                fileName: _jsxFileName,
-                lineNumber: 639,
-                columnNumber: 37
-              }, this)]
-            }, row.Name, true, {
-              fileName: _jsxFileName,
-              lineNumber: 566,
-              columnNumber: 33
-            }, this);
+          cachePlayers = concatTwoArrays(cachePlayers, csvToJson(e.target.result));
+          cachePlayers.map(row => {
+            Object.keys(row).forEach(key => {
+              if (key !== 'SteamID') {
+                if (typeof row[key] === 'object') {
+                  if (key === 'Name' || key === 'Team') {
+                    row[key] = getTextValue(row[key]);
+                  } else {
+                    row[key] = getNumericValue(row[key]);
+                  }
+                }
+              }
+            });
+            return cachePlayers;
           });
-          table.render(element);
+          updatePlayers(cachePlayers);
           document.getElementById('box').style.display = 'block';
+          document.getElementById('upload-button').style.display = 'none';
         };
       });
     } else {
       alert("Wrong format");
-    } // todo props.handleFile(fileUploaded);
-
+    }
   };
 
-  return /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxDEV)("div", {
+  return /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxDEV)("div", {
     className: "App",
-    children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxDEV)("header", {
+    children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxDEV)("header", {
       className: "App-header",
-      children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxDEV)(_mui_material_Button__WEBPACK_IMPORTED_MODULE_13__["default"], {
+      children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxDEV)(_mui_material_Button__WEBPACK_IMPORTED_MODULE_12__["default"], {
         id: "upload-button",
         variant: "outlined",
         onClick: uploadClick,
-        children: ["Upload demos", /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxDEV)("input", {
+        children: ["Upload demos", /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxDEV)("input", {
           hidden: true,
           accept: ".csv",
           multiple: true,
@@ -1037,80 +580,548 @@ function App() {
           onChange: handleChange
         }, void 0, false, {
           fileName: _jsxFileName,
-          lineNumber: 658,
+          lineNumber: 551,
           columnNumber: 21
         }, this)]
       }, void 0, true, {
         fileName: _jsxFileName,
-        lineNumber: 656,
+        lineNumber: 549,
         columnNumber: 17
-      }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxDEV)(_mui_material_Box__WEBPACK_IMPORTED_MODULE_8__["default"], {
+      }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxDEV)(_mui_material_Box__WEBPACK_IMPORTED_MODULE_7__["default"], {
         id: "box",
         display: "none",
         sx: {
           width: '100%'
         },
-        children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxDEV)(_mui_material_Paper__WEBPACK_IMPORTED_MODULE_14__["default"], {
+        children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxDEV)(_mui_material_Paper__WEBPACK_IMPORTED_MODULE_13__["default"], {
           sx: {
             width: '100%',
             mb: 2
           },
-          children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxDEV)(_mui_material_TableContainer__WEBPACK_IMPORTED_MODULE_15__["default"], {
-            children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxDEV)(_mui_material_Table__WEBPACK_IMPORTED_MODULE_16__["default"], {
+          children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxDEV)(_mui_material_TableContainer__WEBPACK_IMPORTED_MODULE_14__["default"], {
+            children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxDEV)(_mui_material_Table__WEBPACK_IMPORTED_MODULE_15__["default"], {
               sx: {
                 minWidth: 750
               },
               "aria-labelledby": "tableTitle",
               size: dense ? 'small' : 'medium',
-              children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxDEV)(EnhancedTableHead, {
+              children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxDEV)(EnhancedTableHead, {
                 order: order,
                 orderBy: orderBy,
                 onRequestSort: handleRequestSort // rowCount={rows.length}
 
               }, void 0, false, {
                 fileName: _jsxFileName,
-                lineNumber: 675,
+                lineNumber: 568,
                 columnNumber: 33
-              }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxDEV)(_mui_material_TableBody__WEBPACK_IMPORTED_MODULE_17__["default"], {
-                id: "table-body"
+              }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxDEV)(_mui_material_TableBody__WEBPACK_IMPORTED_MODULE_16__["default"], {
+                id: "table-body",
+                children: stableSort(players, getComparator(order, orderBy)).map(row => {
+                  let rowKD = row['K/D'];
+                  let rowHSPercentage = row['HS%'];
+                  let rowTeamKill = row['Team kill'];
+                  let rowEntryKill = row['Entry kill'];
+                  let rowBombPlanted = row['Bomb planted'];
+                  let rowATDs = row['ATD (s)'];
+                  let row5k = row['5K'];
+                  let row4k = row['4K'];
+                  let row3k = row['3K'];
+                  let row2k = row['2K'];
+                  let row1k = row['1K'];
+                  let rowTradeKill = row['Trade kill'];
+                  let rowTradeDeath = row['Trade death'];
+                  let rowCrouchKill = row['Crouch kill'];
+                  let rowJumpKill = row['Jump kill'];
+                  let row1v1 = row['1v1'];
+                  let row1v1won = row['1v1 won'];
+                  let row1v1loss = row['1v1 loss'];
+                  let row1v1wonPercentage = row['1v1 won %'];
+                  let row1v2 = row['1v2'];
+                  let row1v2won = row['1v2 won'];
+                  let row1v2loss = row['1v2 loss'];
+                  let row1v2wonPercentage = row['1v2 won %'];
+                  let row1v3 = row['1v3'];
+                  let row1v3won = row['1v3 won'];
+                  let row1v3loss = row['1v3 loss'];
+                  let row1v3wonPercentage = row['1v3 won %'];
+                  let row1v4 = row['1v4'];
+                  let row1v4won = row['1v4 won'];
+                  let row1v4loss = row['1v4 loss'];
+                  let row1v4wonPercentage = row['1v4 won %'];
+                  let row1v5 = row['1v5'];
+                  let row1v5won = row['1v5 won'];
+                  let row1v5loss = row['1v5 loss'];
+                  let row1v5wonPercentage = row['1v5 won %'];
+                  return /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxDEV)(_mui_material_TableRow__WEBPACK_IMPORTED_MODULE_4__["default"], {
+                    hover: true,
+                    role: "checkbox",
+                    tabIndex: -1,
+                    children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxDEV)(_mui_material_TableCell__WEBPACK_IMPORTED_MODULE_5__["default"], {
+                      padding: "checkbox"
+                    }, void 0, false, {
+                      fileName: _jsxFileName,
+                      lineNumber: 620,
+                      columnNumber: 49
+                    }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxDEV)(_mui_material_TableCell__WEBPACK_IMPORTED_MODULE_5__["default"], {
+                      align: "right",
+                      children: row.SteamID
+                    }, void 0, false, {
+                      fileName: _jsxFileName,
+                      lineNumber: 622,
+                      columnNumber: 49
+                    }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxDEV)(_mui_material_TableCell__WEBPACK_IMPORTED_MODULE_5__["default"], {
+                      component: "th",
+                      id: row.Name,
+                      scope: "row",
+                      padding: "none",
+                      children: row.Name
+                    }, void 0, false, {
+                      fileName: _jsxFileName,
+                      lineNumber: 623,
+                      columnNumber: 49
+                    }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxDEV)(_mui_material_TableCell__WEBPACK_IMPORTED_MODULE_5__["default"], {
+                      align: "right",
+                      children: getMatchesValue(row.Matches)
+                    }, void 0, false, {
+                      fileName: _jsxFileName,
+                      lineNumber: 631,
+                      columnNumber: 49
+                    }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxDEV)(_mui_material_TableCell__WEBPACK_IMPORTED_MODULE_5__["default"], {
+                      align: "right",
+                      children: getNumericValue(row.Rank)
+                    }, void 0, false, {
+                      fileName: _jsxFileName,
+                      lineNumber: 632,
+                      columnNumber: 49
+                    }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxDEV)(_mui_material_TableCell__WEBPACK_IMPORTED_MODULE_5__["default"], {
+                      children: row.Team
+                    }, void 0, false, {
+                      fileName: _jsxFileName,
+                      lineNumber: 633,
+                      columnNumber: 49
+                    }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxDEV)(_mui_material_TableCell__WEBPACK_IMPORTED_MODULE_5__["default"], {
+                      align: "right",
+                      children: row.Rating
+                    }, void 0, false, {
+                      fileName: _jsxFileName,
+                      lineNumber: 634,
+                      columnNumber: 49
+                    }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxDEV)(_mui_material_TableCell__WEBPACK_IMPORTED_MODULE_5__["default"], {
+                      align: "right",
+                      children: row.Kills
+                    }, void 0, false, {
+                      fileName: _jsxFileName,
+                      lineNumber: 635,
+                      columnNumber: 49
+                    }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxDEV)(_mui_material_TableCell__WEBPACK_IMPORTED_MODULE_5__["default"], {
+                      align: "right",
+                      children: row.Assists
+                    }, void 0, false, {
+                      fileName: _jsxFileName,
+                      lineNumber: 636,
+                      columnNumber: 49
+                    }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxDEV)(_mui_material_TableCell__WEBPACK_IMPORTED_MODULE_5__["default"], {
+                      align: "right",
+                      children: row.Deaths
+                    }, void 0, false, {
+                      fileName: _jsxFileName,
+                      lineNumber: 637,
+                      columnNumber: 49
+                    }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxDEV)(_mui_material_TableCell__WEBPACK_IMPORTED_MODULE_5__["default"], {
+                      align: "right",
+                      children: rowKD
+                    }, void 0, false, {
+                      fileName: _jsxFileName,
+                      lineNumber: 638,
+                      columnNumber: 49
+                    }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxDEV)(_mui_material_TableCell__WEBPACK_IMPORTED_MODULE_5__["default"], {
+                      align: "right",
+                      children: row.HS
+                    }, void 0, false, {
+                      fileName: _jsxFileName,
+                      lineNumber: 639,
+                      columnNumber: 49
+                    }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxDEV)(_mui_material_TableCell__WEBPACK_IMPORTED_MODULE_5__["default"], {
+                      align: "right",
+                      children: rowHSPercentage
+                    }, void 0, false, {
+                      fileName: _jsxFileName,
+                      lineNumber: 640,
+                      columnNumber: 49
+                    }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxDEV)(_mui_material_TableCell__WEBPACK_IMPORTED_MODULE_5__["default"], {
+                      align: "right",
+                      children: rowTeamKill
+                    }, void 0, false, {
+                      fileName: _jsxFileName,
+                      lineNumber: 641,
+                      columnNumber: 49
+                    }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxDEV)(_mui_material_TableCell__WEBPACK_IMPORTED_MODULE_5__["default"], {
+                      align: "right",
+                      children: rowEntryKill
+                    }, void 0, false, {
+                      fileName: _jsxFileName,
+                      lineNumber: 642,
+                      columnNumber: 49
+                    }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxDEV)(_mui_material_TableCell__WEBPACK_IMPORTED_MODULE_5__["default"], {
+                      align: "right",
+                      children: rowBombPlanted
+                    }, void 0, false, {
+                      fileName: _jsxFileName,
+                      lineNumber: 643,
+                      columnNumber: 49
+                    }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxDEV)(_mui_material_TableCell__WEBPACK_IMPORTED_MODULE_5__["default"], {
+                      align: "right",
+                      children: row.MVP
+                    }, void 0, false, {
+                      fileName: _jsxFileName,
+                      lineNumber: 644,
+                      columnNumber: 49
+                    }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxDEV)(_mui_material_TableCell__WEBPACK_IMPORTED_MODULE_5__["default"], {
+                      align: "right",
+                      children: row.Score
+                    }, void 0, false, {
+                      fileName: _jsxFileName,
+                      lineNumber: 645,
+                      columnNumber: 49
+                    }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxDEV)(_mui_material_TableCell__WEBPACK_IMPORTED_MODULE_5__["default"], {
+                      align: "right",
+                      children: row.RWS
+                    }, void 0, false, {
+                      fileName: _jsxFileName,
+                      lineNumber: 646,
+                      columnNumber: 49
+                    }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxDEV)(_mui_material_TableCell__WEBPACK_IMPORTED_MODULE_5__["default"], {
+                      align: "right",
+                      children: rowATDs
+                    }, void 0, false, {
+                      fileName: _jsxFileName,
+                      lineNumber: 647,
+                      columnNumber: 49
+                    }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxDEV)(_mui_material_TableCell__WEBPACK_IMPORTED_MODULE_5__["default"], {
+                      align: "right",
+                      children: row.KPR
+                    }, void 0, false, {
+                      fileName: _jsxFileName,
+                      lineNumber: 648,
+                      columnNumber: 49
+                    }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxDEV)(_mui_material_TableCell__WEBPACK_IMPORTED_MODULE_5__["default"], {
+                      align: "right",
+                      children: row.APR
+                    }, void 0, false, {
+                      fileName: _jsxFileName,
+                      lineNumber: 649,
+                      columnNumber: 49
+                    }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxDEV)(_mui_material_TableCell__WEBPACK_IMPORTED_MODULE_5__["default"], {
+                      align: "right",
+                      children: row.TDH
+                    }, void 0, false, {
+                      fileName: _jsxFileName,
+                      lineNumber: 650,
+                      columnNumber: 49
+                    }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxDEV)(_mui_material_TableCell__WEBPACK_IMPORTED_MODULE_5__["default"], {
+                      align: "right",
+                      children: row.TDA
+                    }, void 0, false, {
+                      fileName: _jsxFileName,
+                      lineNumber: 651,
+                      columnNumber: 49
+                    }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxDEV)(_mui_material_TableCell__WEBPACK_IMPORTED_MODULE_5__["default"], {
+                      align: "right",
+                      children: row5k
+                    }, void 0, false, {
+                      fileName: _jsxFileName,
+                      lineNumber: 652,
+                      columnNumber: 49
+                    }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxDEV)(_mui_material_TableCell__WEBPACK_IMPORTED_MODULE_5__["default"], {
+                      align: "right",
+                      children: row4k
+                    }, void 0, false, {
+                      fileName: _jsxFileName,
+                      lineNumber: 653,
+                      columnNumber: 49
+                    }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxDEV)(_mui_material_TableCell__WEBPACK_IMPORTED_MODULE_5__["default"], {
+                      align: "right",
+                      children: row3k
+                    }, void 0, false, {
+                      fileName: _jsxFileName,
+                      lineNumber: 654,
+                      columnNumber: 49
+                    }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxDEV)(_mui_material_TableCell__WEBPACK_IMPORTED_MODULE_5__["default"], {
+                      align: "right",
+                      children: row2k
+                    }, void 0, false, {
+                      fileName: _jsxFileName,
+                      lineNumber: 655,
+                      columnNumber: 49
+                    }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxDEV)(_mui_material_TableCell__WEBPACK_IMPORTED_MODULE_5__["default"], {
+                      align: "right",
+                      children: row1k
+                    }, void 0, false, {
+                      fileName: _jsxFileName,
+                      lineNumber: 656,
+                      columnNumber: 49
+                    }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxDEV)(_mui_material_TableCell__WEBPACK_IMPORTED_MODULE_5__["default"], {
+                      align: "right",
+                      children: rowTradeKill
+                    }, void 0, false, {
+                      fileName: _jsxFileName,
+                      lineNumber: 657,
+                      columnNumber: 49
+                    }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxDEV)(_mui_material_TableCell__WEBPACK_IMPORTED_MODULE_5__["default"], {
+                      align: "right",
+                      children: rowTradeDeath
+                    }, void 0, false, {
+                      fileName: _jsxFileName,
+                      lineNumber: 658,
+                      columnNumber: 49
+                    }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxDEV)(_mui_material_TableCell__WEBPACK_IMPORTED_MODULE_5__["default"], {
+                      align: "right",
+                      children: rowCrouchKill
+                    }, void 0, false, {
+                      fileName: _jsxFileName,
+                      lineNumber: 659,
+                      columnNumber: 49
+                    }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxDEV)(_mui_material_TableCell__WEBPACK_IMPORTED_MODULE_5__["default"], {
+                      align: "right",
+                      children: rowJumpKill
+                    }, void 0, false, {
+                      fileName: _jsxFileName,
+                      lineNumber: 660,
+                      columnNumber: 49
+                    }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxDEV)(_mui_material_TableCell__WEBPACK_IMPORTED_MODULE_5__["default"], {
+                      align: "right",
+                      children: row1v1
+                    }, void 0, false, {
+                      fileName: _jsxFileName,
+                      lineNumber: 661,
+                      columnNumber: 49
+                    }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxDEV)(_mui_material_TableCell__WEBPACK_IMPORTED_MODULE_5__["default"], {
+                      align: "right",
+                      children: row1v1won
+                    }, void 0, false, {
+                      fileName: _jsxFileName,
+                      lineNumber: 662,
+                      columnNumber: 49
+                    }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxDEV)(_mui_material_TableCell__WEBPACK_IMPORTED_MODULE_5__["default"], {
+                      align: "right",
+                      children: row1v1loss
+                    }, void 0, false, {
+                      fileName: _jsxFileName,
+                      lineNumber: 663,
+                      columnNumber: 49
+                    }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxDEV)(_mui_material_TableCell__WEBPACK_IMPORTED_MODULE_5__["default"], {
+                      align: "right",
+                      children: row1v1wonPercentage
+                    }, void 0, false, {
+                      fileName: _jsxFileName,
+                      lineNumber: 664,
+                      columnNumber: 49
+                    }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxDEV)(_mui_material_TableCell__WEBPACK_IMPORTED_MODULE_5__["default"], {
+                      align: "right",
+                      children: row1v2
+                    }, void 0, false, {
+                      fileName: _jsxFileName,
+                      lineNumber: 665,
+                      columnNumber: 49
+                    }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxDEV)(_mui_material_TableCell__WEBPACK_IMPORTED_MODULE_5__["default"], {
+                      align: "right",
+                      children: row1v2won
+                    }, void 0, false, {
+                      fileName: _jsxFileName,
+                      lineNumber: 666,
+                      columnNumber: 49
+                    }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxDEV)(_mui_material_TableCell__WEBPACK_IMPORTED_MODULE_5__["default"], {
+                      align: "right",
+                      children: row1v2loss
+                    }, void 0, false, {
+                      fileName: _jsxFileName,
+                      lineNumber: 667,
+                      columnNumber: 49
+                    }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxDEV)(_mui_material_TableCell__WEBPACK_IMPORTED_MODULE_5__["default"], {
+                      align: "right",
+                      children: row1v2wonPercentage
+                    }, void 0, false, {
+                      fileName: _jsxFileName,
+                      lineNumber: 668,
+                      columnNumber: 49
+                    }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxDEV)(_mui_material_TableCell__WEBPACK_IMPORTED_MODULE_5__["default"], {
+                      align: "right",
+                      children: row1v3
+                    }, void 0, false, {
+                      fileName: _jsxFileName,
+                      lineNumber: 669,
+                      columnNumber: 49
+                    }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxDEV)(_mui_material_TableCell__WEBPACK_IMPORTED_MODULE_5__["default"], {
+                      align: "right",
+                      children: row1v3won
+                    }, void 0, false, {
+                      fileName: _jsxFileName,
+                      lineNumber: 670,
+                      columnNumber: 49
+                    }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxDEV)(_mui_material_TableCell__WEBPACK_IMPORTED_MODULE_5__["default"], {
+                      align: "right",
+                      children: row1v3loss
+                    }, void 0, false, {
+                      fileName: _jsxFileName,
+                      lineNumber: 671,
+                      columnNumber: 49
+                    }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxDEV)(_mui_material_TableCell__WEBPACK_IMPORTED_MODULE_5__["default"], {
+                      align: "right",
+                      children: row1v3wonPercentage
+                    }, void 0, false, {
+                      fileName: _jsxFileName,
+                      lineNumber: 672,
+                      columnNumber: 49
+                    }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxDEV)(_mui_material_TableCell__WEBPACK_IMPORTED_MODULE_5__["default"], {
+                      align: "right",
+                      children: row1v4
+                    }, void 0, false, {
+                      fileName: _jsxFileName,
+                      lineNumber: 673,
+                      columnNumber: 49
+                    }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxDEV)(_mui_material_TableCell__WEBPACK_IMPORTED_MODULE_5__["default"], {
+                      align: "right",
+                      children: row1v4won
+                    }, void 0, false, {
+                      fileName: _jsxFileName,
+                      lineNumber: 674,
+                      columnNumber: 49
+                    }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxDEV)(_mui_material_TableCell__WEBPACK_IMPORTED_MODULE_5__["default"], {
+                      align: "right",
+                      children: row1v4loss
+                    }, void 0, false, {
+                      fileName: _jsxFileName,
+                      lineNumber: 675,
+                      columnNumber: 49
+                    }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxDEV)(_mui_material_TableCell__WEBPACK_IMPORTED_MODULE_5__["default"], {
+                      align: "right",
+                      children: row1v4wonPercentage
+                    }, void 0, false, {
+                      fileName: _jsxFileName,
+                      lineNumber: 676,
+                      columnNumber: 49
+                    }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxDEV)(_mui_material_TableCell__WEBPACK_IMPORTED_MODULE_5__["default"], {
+                      align: "right",
+                      children: row1v5
+                    }, void 0, false, {
+                      fileName: _jsxFileName,
+                      lineNumber: 677,
+                      columnNumber: 49
+                    }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxDEV)(_mui_material_TableCell__WEBPACK_IMPORTED_MODULE_5__["default"], {
+                      align: "right",
+                      children: row1v5won
+                    }, void 0, false, {
+                      fileName: _jsxFileName,
+                      lineNumber: 678,
+                      columnNumber: 49
+                    }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxDEV)(_mui_material_TableCell__WEBPACK_IMPORTED_MODULE_5__["default"], {
+                      align: "right",
+                      children: row1v5loss
+                    }, void 0, false, {
+                      fileName: _jsxFileName,
+                      lineNumber: 679,
+                      columnNumber: 49
+                    }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxDEV)(_mui_material_TableCell__WEBPACK_IMPORTED_MODULE_5__["default"], {
+                      align: "right",
+                      children: row1v5wonPercentage
+                    }, void 0, false, {
+                      fileName: _jsxFileName,
+                      lineNumber: 680,
+                      columnNumber: 49
+                    }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxDEV)(_mui_material_TableCell__WEBPACK_IMPORTED_MODULE_5__["default"], {
+                      align: "right",
+                      children: row.Flashbang
+                    }, void 0, false, {
+                      fileName: _jsxFileName,
+                      lineNumber: 681,
+                      columnNumber: 49
+                    }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxDEV)(_mui_material_TableCell__WEBPACK_IMPORTED_MODULE_5__["default"], {
+                      align: "right",
+                      children: row.Smoke
+                    }, void 0, false, {
+                      fileName: _jsxFileName,
+                      lineNumber: 682,
+                      columnNumber: 49
+                    }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxDEV)(_mui_material_TableCell__WEBPACK_IMPORTED_MODULE_5__["default"], {
+                      align: "right",
+                      children: row.HE
+                    }, void 0, false, {
+                      fileName: _jsxFileName,
+                      lineNumber: 683,
+                      columnNumber: 49
+                    }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxDEV)(_mui_material_TableCell__WEBPACK_IMPORTED_MODULE_5__["default"], {
+                      align: "right",
+                      children: row.Decoy
+                    }, void 0, false, {
+                      fileName: _jsxFileName,
+                      lineNumber: 684,
+                      columnNumber: 49
+                    }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxDEV)(_mui_material_TableCell__WEBPACK_IMPORTED_MODULE_5__["default"], {
+                      align: "right",
+                      children: row.Molotov
+                    }, void 0, false, {
+                      fileName: _jsxFileName,
+                      lineNumber: 685,
+                      columnNumber: 49
+                    }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxDEV)(_mui_material_TableCell__WEBPACK_IMPORTED_MODULE_5__["default"], {
+                      align: "right",
+                      children: row.Incendiary
+                    }, void 0, false, {
+                      fileName: _jsxFileName,
+                      lineNumber: 686,
+                      columnNumber: 49
+                    }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxDEV)(_mui_material_TableCell__WEBPACK_IMPORTED_MODULE_5__["default"], {
+                      align: "right",
+                      children: row.VAC
+                    }, void 0, false, {
+                      fileName: _jsxFileName,
+                      lineNumber: 687,
+                      columnNumber: 49
+                    }, this)]
+                  }, row.Name, true, {
+                    fileName: _jsxFileName,
+                    lineNumber: 614,
+                    columnNumber: 45
+                  }, this);
+                })
               }, void 0, false, {
                 fileName: _jsxFileName,
-                lineNumber: 681,
+                lineNumber: 574,
                 columnNumber: 33
               }, this)]
             }, void 0, true, {
               fileName: _jsxFileName,
-              lineNumber: 670,
+              lineNumber: 563,
               columnNumber: 29
             }, this)
           }, void 0, false, {
             fileName: _jsxFileName,
-            lineNumber: 669,
+            lineNumber: 562,
             columnNumber: 25
           }, this)
         }, void 0, false, {
           fileName: _jsxFileName,
-          lineNumber: 668,
+          lineNumber: 561,
           columnNumber: 21
         }, this)
       }, void 0, false, {
         fileName: _jsxFileName,
-        lineNumber: 667,
+        lineNumber: 560,
         columnNumber: 17
       }, this)]
     }, void 0, true, {
       fileName: _jsxFileName,
-      lineNumber: 655,
+      lineNumber: 548,
       columnNumber: 13
     }, this)
   }, void 0, false, {
     fileName: _jsxFileName,
-    lineNumber: 654,
+    lineNumber: 547,
     columnNumber: 9
   }, this);
 }
 
-_s(App, "AKetDQZMSd942zfh3HzkaWOA8VU=");
+_s(App, "jhhnepSLdFpsDeWHVl7rDggDqVA=");
 
 _c3 = App;
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (App);
@@ -62013,7 +62024,7 @@ function combine(array, callback) {
 /******/ 	
 /******/ 	/* webpack/runtime/getFullHash */
 /******/ 	(() => {
-/******/ 		__webpack_require__.h = () => ("1e1e6c4da4aa5cc57ea5")
+/******/ 		__webpack_require__.h = () => ("d2d0d00f763330648b3e")
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/global */
