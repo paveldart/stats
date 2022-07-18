@@ -86,243 +86,305 @@ function stableSort(array, comparator) {
   });
   return stabilizedThis.map(el => el[0]);
 }
+/* Remove '#' in color hex string */
 
-const headCells = [{
+
+function trim(s) {
+  return s.charAt(0) === '#' ? s.substring(1, 7) : s;
+}
+/* Convert a hex string to an RGB triplet */
+
+
+function convertToRGB(hex) {
+  let color = [];
+  color[0] = parseInt(trim(hex).substring(0, 2), 16);
+  color[1] = parseInt(trim(hex).substring(2, 4), 16);
+  color[2] = parseInt(trim(hex).substring(4, 6), 16);
+  return color;
+}
+
+function generateColor(colorStart, colorEnd, colorCount) {
+  // The beginning of your gradient
+  let start = convertToRGB(colorStart); // The end of your gradient
+
+  let end = convertToRGB(colorEnd); // The number of colors to compute
+
+  let len = colorCount; //Alpha blending amount
+
+  let alpha = 0.0;
+  let saida = [];
+
+  for (let i = 0; i < len; i++) {
+    let c = [];
+    alpha += 1.0 / len;
+    c[0] = Math.floor(start[0] * alpha + (1 - alpha) * end[0]);
+    c[1] = Math.floor(start[1] * alpha + (1 - alpha) * end[1]);
+    c[2] = Math.floor(start[2] * alpha + (1 - alpha) * end[2]);
+    saida.push('rgba(' + c.join(',') + ', 0.3)');
+  }
+
+  return saida;
+}
+
+let colors = generateColor('#74af2c', '#e96244', 101);
+
+function setColor(value, key) {
+  let val;
+  cells.map(cell => {
+    if (cell.id === key) {
+      val = value - 0;
+      let range = cell.range;
+      val = (val / (range[1] - range[0])).toFixed(2) * 100;
+    }
+
+    return cells;
+  });
+
+  if (isNaN(val)) {
+    val = 50;
+  }
+
+  return colors[Math.floor(val)];
+}
+
+const cells = [{
   id: 'SteamID',
   numeric: true,
-  disablePadding: false
+  range: [0, 0]
 }, {
   id: 'Name',
   numeric: false,
-  disablePadding: true
+  disablePadding: true,
+  range: [0, 0]
 }, {
   id: 'Matches',
   numeric: true,
-  disablePadding: true
-}, {
-  id: 'Rank',
-  numeric: true,
-  disablePadding: false
+  disablePadding: true,
+  range: [0, 0]
 }, {
   id: 'Teams',
   numeric: false,
-  disablePadding: false
+  range: [0, 0]
 }, {
   id: 'Rating',
   numeric: true,
-  disablePadding: false
+  range: [0, 0]
 }, {
   id: 'Kills',
   numeric: true,
-  disablePadding: false
+  range: [0, 0]
 }, {
   id: 'Assists',
   numeric: true,
-  disablePadding: false
+  range: [0, 0]
 }, {
   id: 'Deaths',
   numeric: true,
-  disablePadding: false
+  range: [0, 0]
 }, {
   id: 'K/D',
   numeric: true,
-  disablePadding: false
+  range: [0, 0]
 }, {
   id: 'HS',
   numeric: true,
-  disablePadding: false
+  range: [0, 0]
 }, {
   id: 'HS%',
   numeric: true,
-  disablePadding: false
+  range: [0, 0]
 }, {
   id: 'Team kill',
   numeric: true,
-  disablePadding: false
+  range: [0, 0]
 }, {
   id: 'Entry kill',
   numeric: true,
-  disablePadding: false
+  range: [0, 0]
 }, {
   id: 'Bomb planted',
   numeric: true,
-  disablePadding: false
+  range: [0, 0]
 }, {
   id: 'MVP',
   numeric: true,
-  disablePadding: false
+  range: [0, 0]
 }, {
   id: 'Score',
   numeric: true,
-  disablePadding: false
+  range: [0, 0]
 }, {
   id: 'RWS',
   numeric: true,
-  disablePadding: false
+  range: [0, 0]
 }, {
   id: 'ATD (s)',
   numeric: true,
-  disablePadding: false
+  range: [0, 0]
 }, {
   id: 'KPR',
   numeric: true,
-  disablePadding: false
+  range: [0, 0]
 }, {
   id: 'APR',
   numeric: true,
-  disablePadding: false
+  range: [0, 0]
 }, {
   id: 'TDH',
   numeric: true,
-  disablePadding: false
+  range: [0, 0]
 }, {
   id: 'TDA',
   numeric: true,
-  disablePadding: false
+  range: [0, 0]
+}, {
+  id: 'Rank',
+  numeric: true,
+  range: [0, 0]
 }, {
   id: '5K',
   numeric: true,
-  disablePadding: false
+  range: [0, 0]
 }, {
   id: '4K',
   numeric: true,
-  disablePadding: false
+  range: [0, 0]
 }, {
   id: '3K',
   numeric: true,
-  disablePadding: false
+  range: [0, 0]
 }, {
   id: '2K',
   numeric: true,
-  disablePadding: false
+  range: [0, 0]
 }, {
   id: '1K',
   numeric: true,
-  disablePadding: false
+  range: [0, 0]
 }, {
   id: 'Trade kill',
   numeric: true,
-  disablePadding: false
+  range: [0, 0]
 }, {
   id: 'Trade death',
   numeric: true,
-  disablePadding: false
+  range: [0, 0]
 }, {
   id: 'Crouch kill',
   numeric: true,
-  disablePadding: false
+  range: [0, 0]
 }, {
   id: 'Jump kill',
   numeric: true,
-  disablePadding: false
+  range: [0, 0]
 }, {
   id: '1v1',
   numeric: true,
-  disablePadding: false
+  range: [0, 0]
 }, {
   id: '1v1 won',
   numeric: true,
-  disablePadding: false
+  range: [0, 0]
 }, {
   id: '1v1 loss',
   numeric: true,
-  disablePadding: false
+  range: [0, 0]
 }, {
   id: '1v1 won %',
   numeric: true,
-  disablePadding: false
+  range: [0, 0]
 }, {
   id: '1v2',
   numeric: true,
-  disablePadding: false
+  range: [0, 0]
 }, {
   id: '1v2 won',
   numeric: true,
-  disablePadding: false
+  range: [0, 0]
 }, {
   id: '1v2 loss',
   numeric: true,
-  disablePadding: false
+  range: [0, 0]
 }, {
   id: '1v2 won %',
   numeric: true,
-  disablePadding: false
+  range: [0, 0]
 }, {
   id: '1v3',
   numeric: true,
-  disablePadding: false
+  range: [0, 0]
 }, {
   id: '1v3 won',
   numeric: true,
-  disablePadding: false
+  range: [0, 0]
 }, {
   id: '1v3 loss',
   numeric: true,
-  disablePadding: false
+  range: [0, 0]
 }, {
   id: '1v3 won %',
   numeric: true,
-  disablePadding: false
+  range: [0, 0]
 }, {
   id: '1v4',
   numeric: true,
-  disablePadding: false
+  range: [0, 0]
 }, {
   id: '1v4 won',
   numeric: true,
-  disablePadding: false
+  range: [0, 0]
 }, {
   id: '1v4 loss',
   numeric: true,
-  disablePadding: false
+  range: [0, 0]
 }, {
   id: '1v4 won %',
   numeric: true,
-  disablePadding: false
+  range: [0, 0]
 }, {
   id: '1v5',
   numeric: true,
-  disablePadding: false
+  range: [0, 0]
 }, {
   id: '1v5 won',
   numeric: true,
-  disablePadding: false
+  range: [0, 0]
 }, {
   id: '1v5 loss',
   numeric: true,
-  disablePadding: false
+  range: [0, 0]
 }, {
   id: '1v5 won %',
   numeric: true,
-  disablePadding: false
+  range: [0, 0]
 }, {
   id: 'Flashbang',
   numeric: true,
-  disablePadding: false
+  range: [0, 0]
 }, {
   id: 'Smoke',
   numeric: true,
-  disablePadding: false
+  range: [0, 0]
 }, {
   id: 'HE',
   numeric: true,
-  disablePadding: false
+  range: [0, 0]
 }, {
   id: 'Decoy',
   numeric: true,
-  disablePadding: false
+  range: [0, 0]
 }, {
   id: 'Molotov',
   numeric: true,
-  disablePadding: false
+  range: [0, 0]
 }, {
   id: 'Incendiary',
   numeric: true,
-  disablePadding: false
+  range: [0, 0]
 }, {
   id: 'VAC',
   numeric: true,
-  disablePadding: false
+  range: [0, 0]
 }];
 
 function EnhancedTableHead(props) {
@@ -342,43 +404,43 @@ function EnhancedTableHead(props) {
         padding: "checkbox"
       }, void 0, false, {
         fileName: _jsxFileName,
-        lineNumber: 356,
+        lineNumber: 420,
         columnNumber: 17
-      }, this), headCells.map(headCell => /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxDEV)(_mui_material_TableCell__WEBPACK_IMPORTED_MODULE_5__["default"], {
-        align: headCell.numeric ? 'right' : 'left',
-        padding: headCell.disablePadding ? 'none' : 'normal',
-        sortDirection: orderBy === headCell.id ? order : false,
+      }, this), cells.map(cell => /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxDEV)(_mui_material_TableCell__WEBPACK_IMPORTED_MODULE_5__["default"], {
+        align: cell.numeric ? 'right' : 'left',
+        padding: "normal",
+        sortDirection: orderBy === cell.id ? order : false,
         children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxDEV)(_mui_material_TableSortLabel__WEBPACK_IMPORTED_MODULE_6__["default"], {
-          active: orderBy === headCell.id,
-          direction: orderBy === headCell.id ? order : 'asc',
-          onClick: createSortHandler(headCell.id),
-          children: [headCell.id, orderBy === headCell.id ? /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxDEV)(_mui_material_Box__WEBPACK_IMPORTED_MODULE_7__["default"], {
+          active: orderBy === cell.id,
+          direction: orderBy === cell.id ? order : 'asc',
+          onClick: createSortHandler(cell.id),
+          children: [cell.id, orderBy === cell.id ? /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxDEV)(_mui_material_Box__WEBPACK_IMPORTED_MODULE_7__["default"], {
             component: "span",
             sx: _mui_utils__WEBPACK_IMPORTED_MODULE_8__["default"],
             children: order === 'desc' ? 'sorted descending' : 'sorted ascending'
           }, void 0, false, {
             fileName: _jsxFileName,
-            lineNumber: 372,
+            lineNumber: 436,
             columnNumber: 33
           }, this) : null]
         }, void 0, true, {
           fileName: _jsxFileName,
-          lineNumber: 365,
+          lineNumber: 429,
           columnNumber: 25
         }, this)
-      }, headCell.id, false, {
+      }, cell.id, false, {
         fileName: _jsxFileName,
-        lineNumber: 359,
+        lineNumber: 423,
         columnNumber: 21
       }, this))]
     }, void 0, true, {
       fileName: _jsxFileName,
-      lineNumber: 355,
+      lineNumber: 419,
       columnNumber: 13
     }, this)
   }, void 0, false, {
     fileName: _jsxFileName,
-    lineNumber: 354,
+    lineNumber: 418,
     columnNumber: 9
   }, this);
 }
@@ -411,12 +473,12 @@ const EnhancedTableToolbar = () => {
       component: "div"
     }, void 0, false, {
       fileName: _jsxFileName,
-      lineNumber: 399,
+      lineNumber: 463,
       columnNumber: 13
     }, undefined)
   }, void 0, false, {
     fileName: _jsxFileName,
-    lineNumber: 393,
+    lineNumber: 457,
     columnNumber: 9
   }, undefined);
 };
@@ -488,7 +550,7 @@ function App() {
     return array1;
   }
 
-  function getNumericValue(value) {
+  function getNumericValue(value, key) {
     if (typeof value === 'object') {
       value = value.reduce((a, b) => a - 0 + (b - 0), 0) / value.length;
     }
@@ -497,14 +559,16 @@ function App() {
       value = parseFloat(value - 0).toFixed(2);
     }
 
+    checkRange(value, key);
     return value;
   }
 
-  function getSumValue(value) {
+  function getSumValue(value, key) {
     if (typeof value === 'object') {
       value = value.reduce((result, number) => result - 0 + (number - 0));
     }
 
+    checkRange(value, key);
     return value;
   }
 
@@ -526,6 +590,22 @@ function App() {
     }
 
     return uniqueValue;
+  }
+
+  function checkRange(value, key) {
+    cells.map(cell => {
+      if (cell.id === key) {
+        let val = value - 0;
+
+        if (val > cell.range[1]) {
+          cell.range[1] = val;
+        } else if (val < cell.range) {
+          cell.range[0] = val;
+        }
+      }
+
+      return cells;
+    });
   } // Create a reference to the hidden file input element
 
 
@@ -560,9 +640,9 @@ function App() {
                 } else if (key === 'Matches') {
                   newRow[key] = getMatchesValue(row[key]);
                 } else if (key === 'Kills' || key === 'Assists' || key === 'Deaths') {
-                  newRow[key] = getSumValue(row[key]);
+                  newRow[key] = getSumValue(row[key], key);
                 } else {
-                  newRow[key] = getNumericValue(row[key]);
+                  newRow[key] = getNumericValue(row[key], key);
                 }
               }
             });
@@ -571,6 +651,7 @@ function App() {
           });
           updatePlayers(players);
           document.getElementById('box').style.display = 'block';
+          document.getElementById('upload-button').style.display = 'none';
         };
       });
     } else {
@@ -595,12 +676,12 @@ function App() {
           onChange: handleChange
         }, void 0, false, {
           fileName: _jsxFileName,
-          lineNumber: 564,
+          lineNumber: 643,
           columnNumber: 21
         }, this)]
       }, void 0, true, {
         fileName: _jsxFileName,
-        lineNumber: 562,
+        lineNumber: 641,
         columnNumber: 17
       }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxDEV)(_mui_material_Box__WEBPACK_IMPORTED_MODULE_7__["default"], {
         id: "box",
@@ -627,7 +708,7 @@ function App() {
 
               }, void 0, false, {
                 fileName: _jsxFileName,
-                lineNumber: 581,
+                lineNumber: 660,
                 columnNumber: 33
               }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxDEV)(_mui_material_TableBody__WEBPACK_IMPORTED_MODULE_16__["default"], {
                 id: "table-body",
@@ -671,467 +752,632 @@ function App() {
                     hover: true,
                     role: "checkbox",
                     tabIndex: -1,
+                    className: "Table-row",
                     children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxDEV)(_mui_material_TableCell__WEBPACK_IMPORTED_MODULE_5__["default"], {
                       padding: "checkbox"
                     }, void 0, false, {
                       fileName: _jsxFileName,
-                      lineNumber: 633,
+                      lineNumber: 713,
                       columnNumber: 49
                     }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxDEV)(_mui_material_TableCell__WEBPACK_IMPORTED_MODULE_5__["default"], {
                       align: "right",
                       children: row.SteamID
                     }, void 0, false, {
                       fileName: _jsxFileName,
-                      lineNumber: 635,
+                      lineNumber: 715,
                       columnNumber: 49
                     }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxDEV)(_mui_material_TableCell__WEBPACK_IMPORTED_MODULE_5__["default"], {
-                      component: "th",
                       id: row.Name,
                       scope: "row",
                       padding: "none",
                       children: row.Name
                     }, void 0, false, {
                       fileName: _jsxFileName,
-                      lineNumber: 636,
+                      lineNumber: 716,
                       columnNumber: 49
                     }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxDEV)(_mui_material_TableCell__WEBPACK_IMPORTED_MODULE_5__["default"], {
                       align: "right",
                       children: row.Matches
                     }, void 0, false, {
                       fileName: _jsxFileName,
-                      lineNumber: 644,
-                      columnNumber: 49
-                    }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxDEV)(_mui_material_TableCell__WEBPACK_IMPORTED_MODULE_5__["default"], {
-                      align: "right",
-                      children: row.Rank
-                    }, void 0, false, {
-                      fileName: _jsxFileName,
-                      lineNumber: 645,
+                      lineNumber: 723,
                       columnNumber: 49
                     }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxDEV)(_mui_material_TableCell__WEBPACK_IMPORTED_MODULE_5__["default"], {
                       children: row.Team
                     }, void 0, false, {
                       fileName: _jsxFileName,
-                      lineNumber: 646,
+                      lineNumber: 724,
                       columnNumber: 49
                     }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxDEV)(_mui_material_TableCell__WEBPACK_IMPORTED_MODULE_5__["default"], {
+                      style: {
+                        background: setColor(row.Rating, 'Rating')
+                      },
                       align: "right",
                       children: row.Rating
                     }, void 0, false, {
                       fileName: _jsxFileName,
-                      lineNumber: 647,
+                      lineNumber: 725,
                       columnNumber: 49
                     }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxDEV)(_mui_material_TableCell__WEBPACK_IMPORTED_MODULE_5__["default"], {
+                      style: {
+                        background: setColor(row.Kills, 'Kills')
+                      },
                       align: "right",
                       children: row.Kills
                     }, void 0, false, {
                       fileName: _jsxFileName,
-                      lineNumber: 648,
+                      lineNumber: 726,
                       columnNumber: 49
                     }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxDEV)(_mui_material_TableCell__WEBPACK_IMPORTED_MODULE_5__["default"], {
+                      style: {
+                        background: setColor(row.Assists, 'Assists')
+                      },
                       align: "right",
                       children: row.Assists
                     }, void 0, false, {
                       fileName: _jsxFileName,
-                      lineNumber: 649,
+                      lineNumber: 727,
                       columnNumber: 49
                     }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxDEV)(_mui_material_TableCell__WEBPACK_IMPORTED_MODULE_5__["default"], {
+                      style: {
+                        background: setColor(row.Deaths, 'Deaths')
+                      },
                       align: "right",
                       children: row.Deaths
                     }, void 0, false, {
                       fileName: _jsxFileName,
-                      lineNumber: 650,
+                      lineNumber: 728,
                       columnNumber: 49
                     }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxDEV)(_mui_material_TableCell__WEBPACK_IMPORTED_MODULE_5__["default"], {
+                      style: {
+                        background: setColor(rowKD, 'K/D')
+                      },
                       align: "right",
                       children: rowKD
                     }, void 0, false, {
                       fileName: _jsxFileName,
-                      lineNumber: 651,
+                      lineNumber: 729,
                       columnNumber: 49
                     }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxDEV)(_mui_material_TableCell__WEBPACK_IMPORTED_MODULE_5__["default"], {
+                      style: {
+                        background: setColor(row.HS, 'HS')
+                      },
                       align: "right",
                       children: row.HS
                     }, void 0, false, {
                       fileName: _jsxFileName,
-                      lineNumber: 652,
+                      lineNumber: 730,
                       columnNumber: 49
                     }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxDEV)(_mui_material_TableCell__WEBPACK_IMPORTED_MODULE_5__["default"], {
+                      style: {
+                        background: setColor(rowHSPercentage, 'HS%')
+                      },
                       align: "right",
                       children: rowHSPercentage
                     }, void 0, false, {
                       fileName: _jsxFileName,
-                      lineNumber: 653,
+                      lineNumber: 731,
                       columnNumber: 49
                     }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxDEV)(_mui_material_TableCell__WEBPACK_IMPORTED_MODULE_5__["default"], {
+                      style: {
+                        background: setColor(rowTeamKill, 'Team kill')
+                      },
                       align: "right",
                       children: rowTeamKill
                     }, void 0, false, {
                       fileName: _jsxFileName,
-                      lineNumber: 654,
+                      lineNumber: 732,
                       columnNumber: 49
                     }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxDEV)(_mui_material_TableCell__WEBPACK_IMPORTED_MODULE_5__["default"], {
+                      style: {
+                        background: setColor(rowEntryKill, 'Entry kill')
+                      },
                       align: "right",
                       children: rowEntryKill
                     }, void 0, false, {
                       fileName: _jsxFileName,
-                      lineNumber: 655,
+                      lineNumber: 733,
                       columnNumber: 49
                     }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxDEV)(_mui_material_TableCell__WEBPACK_IMPORTED_MODULE_5__["default"], {
+                      style: {
+                        background: setColor(rowBombPlanted, 'Bomb planted')
+                      },
                       align: "right",
                       children: rowBombPlanted
                     }, void 0, false, {
                       fileName: _jsxFileName,
-                      lineNumber: 656,
+                      lineNumber: 734,
                       columnNumber: 49
                     }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxDEV)(_mui_material_TableCell__WEBPACK_IMPORTED_MODULE_5__["default"], {
+                      style: {
+                        background: setColor(row.MVP, 'MVP')
+                      },
                       align: "right",
                       children: row.MVP
                     }, void 0, false, {
                       fileName: _jsxFileName,
-                      lineNumber: 657,
+                      lineNumber: 735,
                       columnNumber: 49
                     }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxDEV)(_mui_material_TableCell__WEBPACK_IMPORTED_MODULE_5__["default"], {
+                      style: {
+                        background: setColor(row.Score, 'Score')
+                      },
                       align: "right",
                       children: row.Score
                     }, void 0, false, {
                       fileName: _jsxFileName,
-                      lineNumber: 658,
+                      lineNumber: 736,
                       columnNumber: 49
                     }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxDEV)(_mui_material_TableCell__WEBPACK_IMPORTED_MODULE_5__["default"], {
+                      style: {
+                        background: setColor(row.RWS, 'RWS')
+                      },
                       align: "right",
                       children: row.RWS
                     }, void 0, false, {
                       fileName: _jsxFileName,
-                      lineNumber: 659,
+                      lineNumber: 737,
                       columnNumber: 49
                     }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxDEV)(_mui_material_TableCell__WEBPACK_IMPORTED_MODULE_5__["default"], {
+                      style: {
+                        background: setColor(rowATDs, 'ATD (s)')
+                      },
                       align: "right",
                       children: rowATDs
                     }, void 0, false, {
                       fileName: _jsxFileName,
-                      lineNumber: 660,
+                      lineNumber: 738,
                       columnNumber: 49
                     }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxDEV)(_mui_material_TableCell__WEBPACK_IMPORTED_MODULE_5__["default"], {
+                      style: {
+                        background: setColor(row.KPR, 'KPR')
+                      },
                       align: "right",
                       children: row.KPR
                     }, void 0, false, {
                       fileName: _jsxFileName,
-                      lineNumber: 661,
+                      lineNumber: 739,
                       columnNumber: 49
                     }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxDEV)(_mui_material_TableCell__WEBPACK_IMPORTED_MODULE_5__["default"], {
+                      style: {
+                        background: setColor(row.APR, 'KPR')
+                      },
                       align: "right",
                       children: row.APR
                     }, void 0, false, {
                       fileName: _jsxFileName,
-                      lineNumber: 662,
+                      lineNumber: 740,
                       columnNumber: 49
                     }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxDEV)(_mui_material_TableCell__WEBPACK_IMPORTED_MODULE_5__["default"], {
+                      style: {
+                        background: setColor(row.TDH, 'TDH')
+                      },
                       align: "right",
                       children: row.TDH
                     }, void 0, false, {
                       fileName: _jsxFileName,
-                      lineNumber: 663,
+                      lineNumber: 741,
                       columnNumber: 49
                     }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxDEV)(_mui_material_TableCell__WEBPACK_IMPORTED_MODULE_5__["default"], {
+                      style: {
+                        background: setColor(row.TDA, 'TDA')
+                      },
                       align: "right",
                       children: row.TDA
                     }, void 0, false, {
                       fileName: _jsxFileName,
-                      lineNumber: 664,
+                      lineNumber: 742,
                       columnNumber: 49
                     }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxDEV)(_mui_material_TableCell__WEBPACK_IMPORTED_MODULE_5__["default"], {
+                      style: {
+                        background: setColor(row.Rank, 'Rank')
+                      },
+                      align: "right",
+                      children: row.Rank
+                    }, void 0, false, {
+                      fileName: _jsxFileName,
+                      lineNumber: 743,
+                      columnNumber: 49
+                    }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxDEV)(_mui_material_TableCell__WEBPACK_IMPORTED_MODULE_5__["default"], {
+                      style: {
+                        background: setColor(row5k, '5K')
+                      },
                       align: "right",
                       children: row5k
                     }, void 0, false, {
                       fileName: _jsxFileName,
-                      lineNumber: 665,
+                      lineNumber: 744,
                       columnNumber: 49
                     }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxDEV)(_mui_material_TableCell__WEBPACK_IMPORTED_MODULE_5__["default"], {
+                      style: {
+                        background: setColor(row4k, '4K')
+                      },
                       align: "right",
                       children: row4k
                     }, void 0, false, {
                       fileName: _jsxFileName,
-                      lineNumber: 666,
+                      lineNumber: 745,
                       columnNumber: 49
                     }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxDEV)(_mui_material_TableCell__WEBPACK_IMPORTED_MODULE_5__["default"], {
+                      style: {
+                        background: setColor(row3k, '3K')
+                      },
                       align: "right",
                       children: row3k
                     }, void 0, false, {
                       fileName: _jsxFileName,
-                      lineNumber: 667,
+                      lineNumber: 746,
                       columnNumber: 49
                     }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxDEV)(_mui_material_TableCell__WEBPACK_IMPORTED_MODULE_5__["default"], {
+                      style: {
+                        background: setColor(row2k, '2K')
+                      },
                       align: "right",
                       children: row2k
                     }, void 0, false, {
                       fileName: _jsxFileName,
-                      lineNumber: 668,
+                      lineNumber: 747,
                       columnNumber: 49
                     }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxDEV)(_mui_material_TableCell__WEBPACK_IMPORTED_MODULE_5__["default"], {
+                      style: {
+                        background: setColor(row1k, '1K')
+                      },
                       align: "right",
                       children: row1k
                     }, void 0, false, {
                       fileName: _jsxFileName,
-                      lineNumber: 669,
+                      lineNumber: 748,
                       columnNumber: 49
                     }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxDEV)(_mui_material_TableCell__WEBPACK_IMPORTED_MODULE_5__["default"], {
+                      style: {
+                        background: setColor(rowTradeKill, 'Trade kill')
+                      },
                       align: "right",
                       children: rowTradeKill
                     }, void 0, false, {
                       fileName: _jsxFileName,
-                      lineNumber: 670,
+                      lineNumber: 749,
                       columnNumber: 49
                     }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxDEV)(_mui_material_TableCell__WEBPACK_IMPORTED_MODULE_5__["default"], {
+                      style: {
+                        background: setColor(rowTradeDeath, 'Trade death')
+                      },
                       align: "right",
                       children: rowTradeDeath
                     }, void 0, false, {
                       fileName: _jsxFileName,
-                      lineNumber: 671,
+                      lineNumber: 750,
                       columnNumber: 49
                     }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxDEV)(_mui_material_TableCell__WEBPACK_IMPORTED_MODULE_5__["default"], {
+                      style: {
+                        background: setColor(rowCrouchKill, 'Crouch kill')
+                      },
                       align: "right",
                       children: rowCrouchKill
                     }, void 0, false, {
                       fileName: _jsxFileName,
-                      lineNumber: 672,
+                      lineNumber: 751,
                       columnNumber: 49
                     }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxDEV)(_mui_material_TableCell__WEBPACK_IMPORTED_MODULE_5__["default"], {
+                      style: {
+                        background: setColor(rowJumpKill, 'Jump kill')
+                      },
                       align: "right",
                       children: rowJumpKill
                     }, void 0, false, {
                       fileName: _jsxFileName,
-                      lineNumber: 673,
+                      lineNumber: 752,
                       columnNumber: 49
                     }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxDEV)(_mui_material_TableCell__WEBPACK_IMPORTED_MODULE_5__["default"], {
+                      style: {
+                        background: setColor(row1v1, '1v1')
+                      },
                       align: "right",
                       children: row1v1
                     }, void 0, false, {
                       fileName: _jsxFileName,
-                      lineNumber: 674,
+                      lineNumber: 753,
                       columnNumber: 49
                     }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxDEV)(_mui_material_TableCell__WEBPACK_IMPORTED_MODULE_5__["default"], {
+                      style: {
+                        background: setColor(row1v1won, '1v1 won')
+                      },
                       align: "right",
                       children: row1v1won
                     }, void 0, false, {
                       fileName: _jsxFileName,
-                      lineNumber: 675,
+                      lineNumber: 754,
                       columnNumber: 49
                     }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxDEV)(_mui_material_TableCell__WEBPACK_IMPORTED_MODULE_5__["default"], {
+                      style: {
+                        background: setColor(row1v1loss, '1v1 loss')
+                      },
                       align: "right",
                       children: row1v1loss
                     }, void 0, false, {
                       fileName: _jsxFileName,
-                      lineNumber: 676,
+                      lineNumber: 755,
                       columnNumber: 49
                     }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxDEV)(_mui_material_TableCell__WEBPACK_IMPORTED_MODULE_5__["default"], {
+                      style: {
+                        background: setColor(row1v1wonPercentage, '1v1 won %')
+                      },
                       align: "right",
                       children: row1v1wonPercentage
                     }, void 0, false, {
                       fileName: _jsxFileName,
-                      lineNumber: 677,
+                      lineNumber: 756,
                       columnNumber: 49
                     }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxDEV)(_mui_material_TableCell__WEBPACK_IMPORTED_MODULE_5__["default"], {
+                      style: {
+                        background: setColor(row1v2, '1v2')
+                      },
                       align: "right",
                       children: row1v2
                     }, void 0, false, {
                       fileName: _jsxFileName,
-                      lineNumber: 678,
+                      lineNumber: 757,
                       columnNumber: 49
                     }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxDEV)(_mui_material_TableCell__WEBPACK_IMPORTED_MODULE_5__["default"], {
+                      style: {
+                        background: setColor(row1v2won, '1v2 won')
+                      },
                       align: "right",
                       children: row1v2won
                     }, void 0, false, {
                       fileName: _jsxFileName,
-                      lineNumber: 679,
+                      lineNumber: 758,
                       columnNumber: 49
                     }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxDEV)(_mui_material_TableCell__WEBPACK_IMPORTED_MODULE_5__["default"], {
+                      style: {
+                        background: setColor(row1v2loss, '1v2 loss')
+                      },
                       align: "right",
                       children: row1v2loss
                     }, void 0, false, {
                       fileName: _jsxFileName,
-                      lineNumber: 680,
+                      lineNumber: 759,
                       columnNumber: 49
                     }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxDEV)(_mui_material_TableCell__WEBPACK_IMPORTED_MODULE_5__["default"], {
+                      style: {
+                        background: setColor(row1v2wonPercentage, '1v2 won %')
+                      },
                       align: "right",
                       children: row1v2wonPercentage
                     }, void 0, false, {
                       fileName: _jsxFileName,
-                      lineNumber: 681,
+                      lineNumber: 760,
                       columnNumber: 49
                     }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxDEV)(_mui_material_TableCell__WEBPACK_IMPORTED_MODULE_5__["default"], {
+                      style: {
+                        background: setColor(row1v3, '1v3')
+                      },
                       align: "right",
                       children: row1v3
                     }, void 0, false, {
                       fileName: _jsxFileName,
-                      lineNumber: 682,
+                      lineNumber: 761,
                       columnNumber: 49
                     }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxDEV)(_mui_material_TableCell__WEBPACK_IMPORTED_MODULE_5__["default"], {
+                      style: {
+                        background: setColor(row1v3won, '1v3 won')
+                      },
                       align: "right",
                       children: row1v3won
                     }, void 0, false, {
                       fileName: _jsxFileName,
-                      lineNumber: 683,
+                      lineNumber: 762,
                       columnNumber: 49
                     }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxDEV)(_mui_material_TableCell__WEBPACK_IMPORTED_MODULE_5__["default"], {
+                      style: {
+                        background: setColor(row1v3loss, '1v3 loss')
+                      },
                       align: "right",
                       children: row1v3loss
                     }, void 0, false, {
                       fileName: _jsxFileName,
-                      lineNumber: 684,
+                      lineNumber: 763,
                       columnNumber: 49
                     }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxDEV)(_mui_material_TableCell__WEBPACK_IMPORTED_MODULE_5__["default"], {
+                      style: {
+                        background: setColor(row1v3wonPercentage, '1v3 won %')
+                      },
                       align: "right",
                       children: row1v3wonPercentage
                     }, void 0, false, {
                       fileName: _jsxFileName,
-                      lineNumber: 685,
+                      lineNumber: 764,
                       columnNumber: 49
                     }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxDEV)(_mui_material_TableCell__WEBPACK_IMPORTED_MODULE_5__["default"], {
+                      style: {
+                        background: setColor(row1v4, '1v4')
+                      },
                       align: "right",
                       children: row1v4
                     }, void 0, false, {
                       fileName: _jsxFileName,
-                      lineNumber: 686,
+                      lineNumber: 765,
                       columnNumber: 49
                     }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxDEV)(_mui_material_TableCell__WEBPACK_IMPORTED_MODULE_5__["default"], {
+                      style: {
+                        background: setColor(row1v4won, '1v4 won')
+                      },
                       align: "right",
                       children: row1v4won
                     }, void 0, false, {
                       fileName: _jsxFileName,
-                      lineNumber: 687,
+                      lineNumber: 766,
                       columnNumber: 49
                     }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxDEV)(_mui_material_TableCell__WEBPACK_IMPORTED_MODULE_5__["default"], {
+                      style: {
+                        background: setColor(row1v4loss, '1v4 loss')
+                      },
                       align: "right",
                       children: row1v4loss
                     }, void 0, false, {
                       fileName: _jsxFileName,
-                      lineNumber: 688,
+                      lineNumber: 767,
                       columnNumber: 49
                     }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxDEV)(_mui_material_TableCell__WEBPACK_IMPORTED_MODULE_5__["default"], {
+                      style: {
+                        background: setColor(row1v4wonPercentage, '1v4 won %')
+                      },
                       align: "right",
                       children: row1v4wonPercentage
                     }, void 0, false, {
                       fileName: _jsxFileName,
-                      lineNumber: 689,
+                      lineNumber: 768,
                       columnNumber: 49
                     }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxDEV)(_mui_material_TableCell__WEBPACK_IMPORTED_MODULE_5__["default"], {
+                      style: {
+                        background: setColor(row1v5, '1v5')
+                      },
                       align: "right",
                       children: row1v5
                     }, void 0, false, {
                       fileName: _jsxFileName,
-                      lineNumber: 690,
+                      lineNumber: 769,
                       columnNumber: 49
                     }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxDEV)(_mui_material_TableCell__WEBPACK_IMPORTED_MODULE_5__["default"], {
+                      style: {
+                        background: setColor(row1v5won, '1v5 won')
+                      },
                       align: "right",
                       children: row1v5won
                     }, void 0, false, {
                       fileName: _jsxFileName,
-                      lineNumber: 691,
+                      lineNumber: 770,
                       columnNumber: 49
                     }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxDEV)(_mui_material_TableCell__WEBPACK_IMPORTED_MODULE_5__["default"], {
+                      style: {
+                        background: setColor(row1v5loss, '1v5 loss')
+                      },
                       align: "right",
                       children: row1v5loss
                     }, void 0, false, {
                       fileName: _jsxFileName,
-                      lineNumber: 692,
+                      lineNumber: 771,
                       columnNumber: 49
                     }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxDEV)(_mui_material_TableCell__WEBPACK_IMPORTED_MODULE_5__["default"], {
+                      style: {
+                        background: setColor(row1v5wonPercentage, '1v5 won %')
+                      },
                       align: "right",
                       children: row1v5wonPercentage
                     }, void 0, false, {
                       fileName: _jsxFileName,
-                      lineNumber: 693,
+                      lineNumber: 772,
                       columnNumber: 49
                     }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxDEV)(_mui_material_TableCell__WEBPACK_IMPORTED_MODULE_5__["default"], {
+                      style: {
+                        background: setColor(row.Flashbang, 'Flashbang')
+                      },
                       align: "right",
                       children: row.Flashbang
                     }, void 0, false, {
                       fileName: _jsxFileName,
-                      lineNumber: 694,
+                      lineNumber: 773,
                       columnNumber: 49
                     }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxDEV)(_mui_material_TableCell__WEBPACK_IMPORTED_MODULE_5__["default"], {
+                      style: {
+                        background: setColor(row.Smoke, 'Smoke')
+                      },
                       align: "right",
                       children: row.Smoke
                     }, void 0, false, {
                       fileName: _jsxFileName,
-                      lineNumber: 695,
+                      lineNumber: 774,
                       columnNumber: 49
                     }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxDEV)(_mui_material_TableCell__WEBPACK_IMPORTED_MODULE_5__["default"], {
+                      style: {
+                        background: setColor(row.HE, 'HE')
+                      },
                       align: "right",
                       children: row.HE
                     }, void 0, false, {
                       fileName: _jsxFileName,
-                      lineNumber: 696,
+                      lineNumber: 775,
                       columnNumber: 49
                     }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxDEV)(_mui_material_TableCell__WEBPACK_IMPORTED_MODULE_5__["default"], {
+                      style: {
+                        background: setColor(row.Decoy, 'Decoy')
+                      },
                       align: "right",
                       children: row.Decoy
                     }, void 0, false, {
                       fileName: _jsxFileName,
-                      lineNumber: 697,
+                      lineNumber: 776,
                       columnNumber: 49
                     }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxDEV)(_mui_material_TableCell__WEBPACK_IMPORTED_MODULE_5__["default"], {
+                      style: {
+                        background: setColor(row.Molotov, 'Molotov')
+                      },
                       align: "right",
                       children: row.Molotov
                     }, void 0, false, {
                       fileName: _jsxFileName,
-                      lineNumber: 698,
+                      lineNumber: 777,
                       columnNumber: 49
                     }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxDEV)(_mui_material_TableCell__WEBPACK_IMPORTED_MODULE_5__["default"], {
+                      style: {
+                        background: setColor(row.Incendiary, 'Incendiary')
+                      },
                       align: "right",
                       children: row.Incendiary
                     }, void 0, false, {
                       fileName: _jsxFileName,
-                      lineNumber: 699,
+                      lineNumber: 778,
                       columnNumber: 49
                     }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxDEV)(_mui_material_TableCell__WEBPACK_IMPORTED_MODULE_5__["default"], {
+                      style: {
+                        background: setColor(row.VAC, 'VAC')
+                      },
                       align: "right",
                       children: row.VAC
                     }, void 0, false, {
                       fileName: _jsxFileName,
-                      lineNumber: 700,
+                      lineNumber: 779,
                       columnNumber: 49
                     }, this)]
                   }, row.Name, true, {
                     fileName: _jsxFileName,
-                    lineNumber: 627,
+                    lineNumber: 706,
                     columnNumber: 45
                   }, this);
                 })
               }, void 0, false, {
                 fileName: _jsxFileName,
-                lineNumber: 587,
+                lineNumber: 666,
                 columnNumber: 33
               }, this)]
             }, void 0, true, {
               fileName: _jsxFileName,
-              lineNumber: 576,
+              lineNumber: 655,
               columnNumber: 29
             }, this)
           }, void 0, false, {
             fileName: _jsxFileName,
-            lineNumber: 575,
+            lineNumber: 654,
             columnNumber: 25
           }, this)
         }, void 0, false, {
           fileName: _jsxFileName,
-          lineNumber: 574,
+          lineNumber: 653,
           columnNumber: 21
         }, this)
       }, void 0, false, {
         fileName: _jsxFileName,
-        lineNumber: 573,
+        lineNumber: 652,
         columnNumber: 17
       }, this)]
     }, void 0, true, {
       fileName: _jsxFileName,
-      lineNumber: 561,
+      lineNumber: 640,
       columnNumber: 13
     }, this)
   }, void 0, false, {
     fileName: _jsxFileName,
-    lineNumber: 560,
+    lineNumber: 639,
     columnNumber: 9
   }, this);
 }
@@ -60104,7 +60350,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".App {\n    text-align: center;\n}\n\n@media (prefers-reduced-motion: no-preference) {\n}\n\n.App-header {\n    background-color: rgb(255, 255, 255);\n    min-height: 100vh;\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    justify-content: center;\n    font-size: calc(10px + 2vmin);\n    color: white;\n}\n\n.App-link {\n    color: #61dafb;\n}\n\n@keyframes App-logo-spin {\n    from {\n        transform: rotate(0deg);\n    }\n    to {\n        transform: rotate(360deg);\n    }\n}\n", "",{"version":3,"sources":["webpack://./src/App.css"],"names":[],"mappings":"AAAA;IACI,kBAAkB;AACtB;;AAEA;AACA;;AAEA;IACI,oCAAoC;IACpC,iBAAiB;IACjB,aAAa;IACb,sBAAsB;IACtB,mBAAmB;IACnB,uBAAuB;IACvB,6BAA6B;IAC7B,YAAY;AAChB;;AAEA;IACI,cAAc;AAClB;;AAEA;IACI;QACI,uBAAuB;IAC3B;IACA;QACI,yBAAyB;IAC7B;AACJ","sourcesContent":[".App {\n    text-align: center;\n}\n\n@media (prefers-reduced-motion: no-preference) {\n}\n\n.App-header {\n    background-color: rgb(255, 255, 255);\n    min-height: 100vh;\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    justify-content: center;\n    font-size: calc(10px + 2vmin);\n    color: white;\n}\n\n.App-link {\n    color: #61dafb;\n}\n\n@keyframes App-logo-spin {\n    from {\n        transform: rotate(0deg);\n    }\n    to {\n        transform: rotate(360deg);\n    }\n}\n"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, ".App {\n    text-align: center;\n}\n\n@media (prefers-reduced-motion: no-preference) {\n}\n\n.App-header {\n    background-color: rgb(255, 255, 255);\n    min-height: 100vh;\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    justify-content: center;\n    font-size: calc(10px + 2vmin);\n    color: white;\n}\n\n.App-link {\n    color: #61dafb;\n}\n\n.Table-row td {\n    border: 0 none;\n}\n\n@keyframes App-logo-spin {\n    from {\n        transform: rotate(0deg);\n    }\n    to {\n        transform: rotate(360deg);\n    }\n}\n", "",{"version":3,"sources":["webpack://./src/App.css"],"names":[],"mappings":"AAAA;IACI,kBAAkB;AACtB;;AAEA;AACA;;AAEA;IACI,oCAAoC;IACpC,iBAAiB;IACjB,aAAa;IACb,sBAAsB;IACtB,mBAAmB;IACnB,uBAAuB;IACvB,6BAA6B;IAC7B,YAAY;AAChB;;AAEA;IACI,cAAc;AAClB;;AAEA;IACI,cAAc;AAClB;;AAEA;IACI;QACI,uBAAuB;IAC3B;IACA;QACI,yBAAyB;IAC7B;AACJ","sourcesContent":[".App {\n    text-align: center;\n}\n\n@media (prefers-reduced-motion: no-preference) {\n}\n\n.App-header {\n    background-color: rgb(255, 255, 255);\n    min-height: 100vh;\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    justify-content: center;\n    font-size: calc(10px + 2vmin);\n    color: white;\n}\n\n.App-link {\n    color: #61dafb;\n}\n\n.Table-row td {\n    border: 0 none;\n}\n\n@keyframes App-logo-spin {\n    from {\n        transform: rotate(0deg);\n    }\n    to {\n        transform: rotate(360deg);\n    }\n}\n"],"sourceRoot":""}]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {};
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
@@ -62039,7 +62285,7 @@ function combine(array, callback) {
 /******/ 	
 /******/ 	/* webpack/runtime/getFullHash */
 /******/ 	(() => {
-/******/ 		__webpack_require__.h = () => ("ae5b5b3888889de25152")
+/******/ 		__webpack_require__.h = () => ("a43165624b2148aa06eb")
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/global */
